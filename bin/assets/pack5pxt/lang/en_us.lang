@@ -1,7 +1,8 @@
 //Parts
 item.pack5pxt:bogie0.name=Bogie [0]
+item.pack5pxt:loco_seat.name=Loco Seat
 
 //Locomotives
-
+item.pack5pxt:loco1.name=Locomotive [1] Diesel
 
 //Wagons

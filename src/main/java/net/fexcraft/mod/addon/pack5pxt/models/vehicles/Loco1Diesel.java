@@ -17,6 +17,8 @@ public class Loco1Diesel extends VehicleModel {
 	public Loco1Diesel(){
 		super(); textureX = 128; textureY = 64;
 		this.addToCreators("Ferdinand (FEX___96)");
+		gui_scale_x = gui_scale_y = gui_scale_z = .75f; gui_translate_y = -.25f;
+		//
 		//
 		TurboList chassis = new TurboList("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 109, 15, textureX, textureY)
