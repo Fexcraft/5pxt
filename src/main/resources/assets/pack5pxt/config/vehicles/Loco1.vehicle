@@ -1,0 +1,26 @@
+{
+    "RegistryName": "pack5pxt:loco1",
+    "Addon": "fvtm:pack5pxt",
+    "Name": "(Loco 1) Diesel",
+    "Model": "5pxt:models/vehicle/loco1",
+    "Textures": [
+        "pack5pxt:textures/locomotives/loco1.png"
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 125.40 },
+    	{ "id":"constructor_length", "type": "float", "value": 2 },
+    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    ],
+    "WheelPositions":[
+        { "x":  8, "y": -2, "z": 0, "id": "bogie_front" },
+        { "x": -8, "y": -2, "z": 0, "id": "bogie_rear" }
+    ],
+    "RearConnector": [ -15, -2.5, 0 ],
+    "FrontConnector": [ 15, -2.5, 0 ],
+    "PreInstalled":{
+		"engine": "gep:engine_diesel",
+        "bogie_front": "pack5pxt:bogie0",
+        "bogie_rear": "pack5pxt:bogie0"
+	},
+	"VehicleType": "RAIL"
+}

@@ -1,0 +1,17 @@
+[
+	{
+	  "modid": "pack5pxt",
+	  "name": "5PX Gauge Trains Pack",
+	  "description": "A pack featuring small trains.",
+	  "version": "${version}",
+	  "mcversion": "${mcversion}",
+	  "url": "",
+	  "updateUrl": "",
+	  "authorList": ["FEX___96"],
+	  "credits": "The Forge and FML guys, for making Forge & Stuff",
+	  "logoFile": "",
+	  "screenshots": [],
+	  "dependencies": [],
+	  "parent": "fvtm"
+	}
+]
