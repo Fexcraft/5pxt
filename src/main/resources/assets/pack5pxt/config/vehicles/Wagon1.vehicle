@@ -1,0 +1,26 @@
+{
+    "RegistryName": "pack5pxt:wagon1",
+    "Addon": "fvtm:pack5pxt",
+    "Name": "(Wag 1) Flatbed",
+    "Model": "5pxt:models/vehicle/wagon1",
+    "Textures": [
+        "pack5pxt:textures/wagons/wagon1.png"
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 80.90 },
+    	{ "id":"constructor_length", "type": "float", "value": 2 },
+    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    ],
+    "WheelPositions":[
+        { "x":  12, "y": -2, "z": 0, "id": "bogie_front" },
+        { "x": -12, "y": -2, "z": 0, "id": "bogie_rear" }
+    ],
+    "RearConnector": [ -19, -2.5, 0 ],
+    "FrontConnector": [ 19, -2.5, 0 ],
+    "PreInstalled":{
+        "bogie_front": "pack5pxt:bogie0",
+        "bogie_rear": "pack5pxt:bogie0"
+	},
+	"VehicleType": "RAIL",
+	"Wagon": true
+}

@@ -4,6 +4,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.part;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -34,6 +35,7 @@ public class Bogie0Model extends PartModel {
 			.addShapeBox(-0.5f, -0.5f, 0, 1, 1, 5, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(-2.5f, 1, -2.5f).setRotationAngle(0, 0, 0)
 		);
+		axle0.addProgram(DefaultPrograms.BOGIE_AUTO);
 		this.groups.add(axle0);
 		//
 		TurboList axle1 = new TurboList("axle1");
@@ -53,6 +55,7 @@ public class Bogie0Model extends PartModel {
 			.addShapeBox(-0.5f, -0.5f, 0, 1, 1, 5, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(2.5f, 1, -2.5f).setRotationAngle(0, 0, 0)
 		);
+		axle1.addProgram(DefaultPrograms.BOGIE_AUTO);
 		this.groups.add(axle1);
 		//
 		TurboList chassis = new TurboList("chassis");
@@ -69,6 +72,7 @@ public class Bogie0Model extends PartModel {
 			.addShapeBox(0, 0, 0, 2, 1, 6, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-1, -0.5f, -3).setRotationAngle(0, 0, 0)
 		);
+		chassis.addProgram(DefaultPrograms.BOGIE_AUTO);
 		this.groups.add(chassis);
 	}
 
