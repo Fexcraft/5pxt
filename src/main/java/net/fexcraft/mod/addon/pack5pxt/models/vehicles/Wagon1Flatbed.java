@@ -161,6 +161,7 @@ public class Wagon1Flatbed extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(17.625f, -2.75f, 2.25f).setRotationAngle(0, 0, 0)
 		);
+		lights_front_rear.addProgram(DefaultPrograms.LIGHTS_FRONT_BACKWARD);
 		this.groups.add(lights_front_rear);
 		//
 		TurboList lights_rear_rear = new TurboList("lights_rear_rear");
@@ -172,6 +173,7 @@ public class Wagon1Flatbed extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(-18.625f, -2.75f, 2.25f).setRotationAngle(0, 0, 0)
 		);
+		lights_rear_rear.addProgram(DefaultPrograms.LIGHTS_REAR_FORWARD);
 		this.groups.add(lights_rear_rear);
 		//
 		TurboList primary = new TurboList("primary");

@@ -145,6 +145,7 @@ public class Loco1Diesel extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(13.625f, -4.5f, 2).setRotationAngle(0, 0, 0)
 		);
+		lights_front_head.addProgram(DefaultPrograms.LIGHTS_FRONT_FORWARD);
 		this.groups.add(lights_front_head);
 		//
 		TurboList lights_front_rear = new TurboList("lights_front_rear");
@@ -156,6 +157,7 @@ public class Loco1Diesel extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(13.625f, -4.5f, 1).setRotationAngle(0, 0, 0)
 		);
+		lights_front_rear.addProgram(DefaultPrograms.LIGHTS_FRONT_BACKWARD);
 		this.groups.add(lights_front_rear);
 		//
 		TurboList lights_rear_head = new TurboList("lights_rear_head");
@@ -167,6 +169,7 @@ public class Loco1Diesel extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(-14.625f, -4.5f, 2).setRotationAngle(0, 0, 0)
 		);
+		lights_rear_head.addProgram(DefaultPrograms.LIGHTS_REAR_BACKWARD);
 		this.groups.add(lights_rear_head);
 		//
 		TurboList lights_rear_rear = new TurboList("lights_rear_rear");
@@ -178,6 +181,7 @@ public class Loco1Diesel extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(-14.625f, -4.5f, 1).setRotationAngle(0, 0, 0)
 		);
+		lights_rear_rear.addProgram(DefaultPrograms.LIGHTS_REAR_FORWARD);
 		this.groups.add(lights_rear_rear);
 		//
 		TurboList primary = new TurboList("primary");
