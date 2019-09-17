@@ -1,0 +1,13 @@
+{
+    "RegistryName": "pack5pxt:dirupgrade",
+    "Addon": "fvtm:pack5pxt",
+    "Model": "5pxt:models/part/dirupgrade",
+    "Name": "Directional Upgrade",
+    "Category": "cargo",
+    "Textures": [ "minecraft:textures/blocks/stone.png" ],
+    "Installation":{
+    	"Handler": "default",
+    	"Removable": true,
+    	"Compatible": [ { "vehicle": "pack5pxt:wagon1" } ]
+    }
+}
