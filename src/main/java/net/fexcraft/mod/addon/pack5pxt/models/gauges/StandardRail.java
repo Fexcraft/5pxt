@@ -3,7 +3,9 @@ package net.fexcraft.mod.addon.pack5pxt.models.gauges;
 
 import net.fexcraft.lib.common.math.Vec3f;
 import net.fexcraft.lib.mc.api.registry.fModel;
+import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.RailGaugeModel;
+import net.fexcraft.mod.fvtm.model.TurboList;
 
 /** This file was exported via the FVTM Exporter V1.3 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
@@ -15,19 +17,27 @@ public class StandardRail extends RailGaugeModel {
 	public StandardRail(){
 		super(); textureX = 256; textureY = 256;
 		//
+		this.ties_distance = 0.125f;
 		this.rails = new Vec3f[][]{
-			{ new Vec3f(-0.1875 , 0.125, 0), new Vec3f(-0.15625, 0.125, 0) },
-			{ new Vec3f( 0.15625, 0.125, 0), new Vec3f( 0.1875 , 0.125, 0) },
+			{ new Vec3f(-0.1875, 0.125, 0), new Vec3f(-0.15625, 0.125, 0) },
+			{ new Vec3f(0.15625, 0.125, 0), new Vec3f(0.1875, 0.125, 0) },
 			//
-			/*{ new Vec3f(-0.1875 , 0.0625, 0), new Vec3f(-0.1875 , 0.01, 0) },
-			{ new Vec3f(-0.15625, 0.0625, 0), new Vec3f(-0.15625, 0.01, 0) },
+			//{ new Vec3f(-0.1875, 0.125, 0), new Vec3f(-0.1875, 0.0625, 0) },
+			{ new Vec3f(-0.1875, 0.0625, 0), new Vec3f(-0.1875, 0.125, 0) },
+			{ new Vec3f(-0.15625, 0.125, 0), new Vec3f(-0.15625, 0.0625, 0) },
 			//
-			{ new Vec3f( 0.15625, 0.0625, 0), new Vec3f( 0.15625, 0.01, 0) },
-			{ new Vec3f( 0.1875 , 0.0625, 0), new Vec3f( 0.1875 , 0.01, 0) },
+			//{ new Vec3f(0.15625, 0.125, 0), new Vec3f(0.15625, 0.0625, 0) },
+			{ new Vec3f(0.15625, 0.0625, 0), new Vec3f(0.15625, 0.125, 0) },
+			{ new Vec3f(0.1875, 0.125, 0), new Vec3f(0.1875, 0.0625, 0) },
 			//
-			{ new Vec3f(-0.1875 , 0.01, 0), new Vec3f(-0.15625, 0.01, 0) },
-			{ new Vec3f( 0.15625, 0.01, 0), new Vec3f( 0.1875 , 0.01, 0) }*/
+			{ new Vec3f(-0.1875, 0.0625, 0), new Vec3f(-0.15625, 0.0625, 0) },
+			{ new Vec3f(0.15625, 0.0625, 0), new Vec3f(0.1875, 0.0625, 0) }
 		};
+		TurboList ties = new TurboList("ties");
+		ties.add(new ModelRendererTurbo(ties, 5, 10, textureX, textureY)
+			.addShapeBox(-0.5f, -0.75f, -5, 1, 1, 10, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+		);
+		this.groups.add(ties);
 	}
 
 }
