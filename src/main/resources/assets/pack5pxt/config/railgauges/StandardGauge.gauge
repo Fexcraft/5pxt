@@ -3,6 +3,6 @@
     "Addon": "fvtm:pack5pxt",
     "Model": "5pxt:models/gauges/standard",
     "Name": "Standard Gauge (5pxt)",
-    "Width": 5, "Height": 2,
+    "Width": 5, "Height": 1.5,
     "Texture": "minecraft:textures/blocks/anvil_base.png"
 }
