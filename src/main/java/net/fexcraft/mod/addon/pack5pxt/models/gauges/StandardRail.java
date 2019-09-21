@@ -17,7 +17,7 @@ import net.fexcraft.mod.fvtm.sys.rail.Junction;
 public class StandardRail extends RailGaugeModel {
 
 	public StandardRail(){
-		super(); textureX = 16; textureY = 16;
+		super(); textureX = 32; textureY = 16;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
 		this.ties_distance = 0.125f;
