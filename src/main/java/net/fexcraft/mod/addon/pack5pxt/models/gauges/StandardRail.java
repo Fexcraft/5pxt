@@ -17,10 +17,10 @@ import net.fexcraft.mod.fvtm.sys.rail.Junction;
 public class StandardRail extends RailGaugeModel {
 
 	public StandardRail(){
-		super(); textureX = 32; textureY = 16;
+		super(); textureX = 64; textureY = 32;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		this.ties_distance = 0.125f;
+		this.ties_distance = 0.25f;
 		this.rails = new Vec3f[][]{
 			{ new Vec3f(-0.1875, 0.09375, 0), new Vec3f(-0.15625, 0.09375, 0) },
 			{ new Vec3f(0.15625, 0.09375, 0), new Vec3f(0.1875, 0.09375, 0) },
@@ -44,37 +44,37 @@ public class StandardRail extends RailGaugeModel {
 		this.groups.add(ties);
 		//
 		double_base = new TurboList("double_base");
-		double_base.add(new ModelRendererTurbo(double_base, 9, 5, textureX, textureY).addBox(0, 0, 0, 6, 1, 4)
+		double_base.add(new ModelRendererTurbo(double_base, 13, 0, textureX, textureY).addBox(0, 0, 0, 6, 1, 4)
 			.setRotationPoint(-3, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_base);
 		//
 		double_lever0 = new TurboList("double_lever0");
-		double_lever0.add(new ModelRendererTurbo(double_lever0, 11, 11, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
+		double_lever0.add(new ModelRendererTurbo(double_lever0, 20, 6, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(-2.5f, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_lever0);
 		//
 		double_lever1 = new TurboList("double_lever1");
-		double_lever1.add(new ModelRendererTurbo(double_lever1, 20, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
+		double_lever1.add(new ModelRendererTurbo(double_lever1, 45, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(0.5f, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_lever1);
 		//
 		fork2_base = new TurboList("fork2_base");
-		fork2_base.add(new ModelRendererTurbo(fork2_base, 15, 11, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
+		fork2_base.add(new ModelRendererTurbo(fork2_base, 49, 0, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
 			.setRotationPoint(-1.5f, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork2_base);
 		//
 		fork2_lever = new TurboList("fork2_lever");
-		fork2_lever.add(new ModelRendererTurbo(fork2_lever, 13, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
+		fork2_lever.add(new ModelRendererTurbo(fork2_lever, 30, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(-1, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork2_lever);
 		//
 		fork3_base = new TurboList("fork3_base");
-		fork3_base.add(new ModelRendererTurbo(fork3_base, 0, 11, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
+		fork3_base.add(new ModelRendererTurbo(fork3_base, 34, 0, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
 			.setRotationPoint(-1.5f, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork3_base);
@@ -84,6 +84,27 @@ public class StandardRail extends RailGaugeModel {
 			.setRotationPoint(-1, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork3_lever);
+		//
+		simple_signal_base = new TurboList("simple_signal_base");
+		simple_signal_base.add(new ModelRendererTurbo(simple_signal_base, 37, 6, textureX, textureY).addBox(0, 0, 0, 1, 8, 1)
+			.setRotationPoint(-0.5f, -8, -0.5f).setRotationAngle(0, 0, 0)
+		);
+		simple_signal_base.add(new ModelRendererTurbo(simple_signal_base, 13, 6, textureX, textureY).addBox(0, 0, 0, 2, 3, 1)
+			.setRotationPoint(-1, -9, -0.625f).setRotationAngle(0, 0, 0)
+		);
+		this.groups.add(simple_signal_base);
+		//
+		simple_signal_clear = new TurboList("simple_signal_clear");
+		simple_signal_clear.add(new ModelRendererTurbo(simple_signal_clear, 32, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
+			.setRotationPoint(-0.5f, -7.25f, -0.75f).setRotationAngle(0, 0, 0)
+		);
+		this.groups.add(simple_signal_clear);
+		//
+		simple_signal_stop = new TurboList("simple_signal_stop");
+		simple_signal_stop.add(new ModelRendererTurbo(simple_signal_stop, 27, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
+			.setRotationPoint(-0.5f, -8.75f, -0.75f).setRotationAngle(0, 0, 0)
+		);
+		this.groups.add(simple_signal_stop);
 	}
 	
 	@Override
