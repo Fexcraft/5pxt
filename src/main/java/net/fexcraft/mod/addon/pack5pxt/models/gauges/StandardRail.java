@@ -21,6 +21,7 @@ public class StandardRail extends RailGaugeModel {
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
 		this.ties_distance = 0.25f;
+		this.buffer_length = 0.5f;
 		this.rails = new Vec3f[][]{
 			{ new Vec3f(-0.1875, 0.09375, 0), new Vec3f(-0.15625, 0.09375, 0) },
 			{ new Vec3f(0.15625, 0.09375, 0), new Vec3f(0.1875, 0.09375, 0) },
@@ -105,6 +106,34 @@ public class StandardRail extends RailGaugeModel {
 			.setRotationPoint(-0.5f, -8.75f, -0.75f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(simple_signal_stop);
+		//
+		TurboList buffer = new TurboList("buffer");
+		buffer.add(new ModelRendererTurbo(buffer, 32, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
+			.setRotationPoint(1.5f, -4.25f, 0).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 27, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
+			.setRotationPoint(-2.5f, -4.25f, 0).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 42, 6, textureX, textureY)
+			.addShapeBox(0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1)
+			.setRotationPoint(2.25f, -4.25f, 1).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 47, 6, textureX, textureY)
+			.addShapeBox(0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1)
+			.setRotationPoint(-3.25f, -4.25f, 1).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 52, 6, textureX, textureY)
+			.addShapeBox(0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5, 0, 0, -5, 0, 0, 5, 0, 0, 5)
+			.setRotationPoint(2.25f, -4.25f, 1).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 57, 6, textureX, textureY)
+			.addShapeBox(0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5, 0, 0, -5, 0, 0, 5, 0, 0, 5)
+			.setRotationPoint(-3.25f, -4.25f, 1).setRotationAngle(0, 0, 0)
+		);
+		buffer.add(new ModelRendererTurbo(buffer, 0, 11, textureX, textureY).addBox(0, 0, 0, 7, 2, 1)
+			.setRotationPoint(-3.5f, -4.75f, 0.5f).setRotationAngle(0, 0, 0)
+		);
+		this.groups.add(buffer);
 	}
 	
 	@Override
