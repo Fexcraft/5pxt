@@ -9,7 +9,8 @@
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 80.90 },
     	{ "id":"constructor_length", "type": "float", "value": 2 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    	{ "id":"constructor_height", "type": "float", "value": 0 },
+    	{ "id": "gauge", "type": "integer", "value": 5 }
     ],
     "WheelPositions":[
         { "x":  12, "y": -2, "z": 0, "id": "bogie_front" },
