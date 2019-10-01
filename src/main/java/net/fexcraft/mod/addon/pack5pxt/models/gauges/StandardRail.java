@@ -21,7 +21,7 @@ public class StandardRail extends RailGaugeModel {
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
 		this.ties_distance = 0.25f;
-		this.buffer_length = 0.5f;
+		this.buffer_length = 0.4f;
 		this.rails = new Vec3f[][]{
 			{ new Vec3f(-0.1875, 0.09375, 0), new Vec3f(-0.15625, 0.09375, 0) },
 			{ new Vec3f(0.15625, 0.09375, 0), new Vec3f(0.1875, 0.09375, 0) },
