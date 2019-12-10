@@ -5,5 +5,55 @@
     "Name": "Standard Gauge (5pxt)",
     "Width": 5, "Height": 1.5,
     "TiesTexture": "minecraft:textures/blocks/anvil_base.png",
-    "ModelTexture": "pack5pxt:textures/rails/standard_switch.png"
+    "ModelTexture": "pack5pxt:textures/rails/standard_switch.png",
+    "PreSets":[
+    	{
+    		"name": "4_straight",
+    		"segmentation": 8,
+    		"path":[
+    			[ 0, 0, 0 ],
+    			[ 4, 0, 0 ]
+    		]
+    	},
+    	{
+    		"name": "8_straight_slope_up",
+    		"segmentation": 8,
+    		"path":[
+    			[ 0, 0, 0 ],
+    			[ 0, 0, 0 ],
+    			[ 7, 1, 0 ],
+    			[ 8, 1, 0 ]
+    		]
+    	},
+    	{
+    		"name": "8_straight_slope_down",
+    		"segmentation": 8,
+    		"path":[
+    			[ 0, 0, 0 ],
+    			[ 1, 0, 0 ],
+    			[ 7, -1, 0 ],
+    			[ 8, -1, 0 ]
+    		]
+    	},
+    	{
+    		"name": "2_curve_90_right",
+    		"segmentation": 4,
+    		"path":[
+				[ 0.0, 0.0, 0.0],
+				[ 1.0, 0.0, 0.0],
+				[ 2.0, 0.0, 1.0],
+				[ 2.0, 0.0, 2.0]
+    		]
+    	},
+    	{
+    		"name": "2_curve_90_left",
+    		"segmentation": 4,
+    		"path":[
+				[ 0.0, 0.0, 0.0],
+				[ 1.0, 0.0, 0.0],
+				[ 2.0, 0.0, -1.0],
+				[ 2.0, 0.0, -2.0]
+    		]
+    	}
+    ]
 }
