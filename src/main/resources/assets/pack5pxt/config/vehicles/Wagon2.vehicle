@@ -12,7 +12,7 @@
     	{ "id":"constructor_height", "type": "float", "value": 0 },
     	{ "id":"w2_dl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"w2_dr", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
-    	{ "id": "gauge", "type": "integer", "value": 5 }
+    	{ "id":"gauge", "type": "integer", "value": 5 }
     ],
     "WheelPositions":[
         { "x":  12, "y": -2, "z": 0, "id": "bogie_front" },
@@ -25,5 +25,6 @@
         "bogie_rear": "pack5pxt:bogie0"
 	},
 	"VehicleType": "RAIL",
+	"CouplerRange": 0.05,
 	"Wagon": true
 }

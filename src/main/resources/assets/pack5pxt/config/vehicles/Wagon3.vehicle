@@ -23,5 +23,6 @@
         "bogie_rear": "pack5pxt:bogie0"
 	},
 	"VehicleType": "RAIL",
+	"CouplerRange": 0.05,
 	"Wagon": true
 }

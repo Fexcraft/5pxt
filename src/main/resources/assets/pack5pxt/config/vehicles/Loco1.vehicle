@@ -24,5 +24,6 @@
         "bogie_rear": "pack5pxt:bogie0",
         "seat": "pack5pxt:loco_seat"
 	},
-	"VehicleType": "RAIL"
+	"VehicleType": "RAIL",
+	"CouplerRange": 0.05
 }
