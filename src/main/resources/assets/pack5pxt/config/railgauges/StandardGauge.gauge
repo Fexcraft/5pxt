@@ -4,7 +4,7 @@
     "Model": "5pxt:models/gauges/standard",
     "Name": "Standard Gauge (5pxt)",
     "Width": 5, "Height": 1.5,
-    "Compatible": [ "mim:standard" ],
+    "Compatible": [],
     "TiesTexture": "minecraft:textures/blocks/anvil_base.png",
     "ModelTexture": "pack5pxt:textures/rails/standard_switch.png",
     "PreSets":[
