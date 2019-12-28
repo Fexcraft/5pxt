@@ -17,9 +17,9 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.0"
-group = "net.fexcraft.mod.addon.YOUR-ADDON-ID" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "YOUR-ADDON-ID"
+version = "1.0-PRE-RELEASE"
+group = "net.fexcraft.mod.addon.pack5pxt" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "5PXT"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
