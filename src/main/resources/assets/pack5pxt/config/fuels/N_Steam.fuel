@@ -1,0 +1,9 @@
+{
+    "RegistryName": "pack5pxt:steamandcoal",
+    "Addon": "fvtm:pack5pxt",
+    "Name": "Normal Pack5pxt S+C",
+    "Description": "Steam and Coal mixture for Pack5pxt Steam Trains.",
+    "PrimaryGroup": "steam-and-coal",
+    "SecondaryGroup": "normal",
+    "Quality": 1.0
+}
