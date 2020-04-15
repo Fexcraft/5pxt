@@ -4,7 +4,7 @@ itemGroup.fvtm:pack5pxt=Pack 5PXT
 //Parts
 item.pack5pxt:bogie0.name=Bogie [0]
 item.pack5pxt:loco_seat.name=Loco Seat
-item.pack5pxt:sac_normal.name=
+item.pack5pxt:sac_normal.name=Steam & Coal Mixture
 item.pack5pxt:bogienull.name=Bogie [NULL]
 item.pack5pxt:dirupgrade.name= DIR-Update for Wagon[1]
 item.pack5pxt:steam_engine.name=Steam (and Coal) Engine
