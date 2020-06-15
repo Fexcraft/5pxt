@@ -17,7 +17,8 @@ public class Wagon1Flatbed extends VehicleModel {
 	public Wagon1Flatbed(){
 		super(); textureX = 128; textureY = 32;
 		this.addToCreators("Ferdinand (FEX___96)");
-		gui_scale_x = gui_scale_y = gui_scale_z = .75f; gui_translate_y = -.25f;
+		item_scale.setAll(.75f);
+		item_translate.setAll(0, -.25f, 0);
 		//
 		TurboList chassis = new TurboList("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 73, 12, textureX, textureY)

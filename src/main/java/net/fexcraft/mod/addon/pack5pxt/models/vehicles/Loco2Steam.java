@@ -17,7 +17,8 @@ public class Loco2Steam extends VehicleModel {
 	public Loco2Steam(){
 		super(); textureX = 128; textureY = 64;
 		this.addToCreators("Ferdinand (FEX___96)");
-		gui_scale_x = gui_scale_y = gui_scale_z = .75f; gui_translate_y = -.25f;
+		item_scale.setAll(.75f);
+		item_translate.setAll(0, -.25f, 0);
 		//
 		TurboList axle0 = new TurboList("axle0");
 		axle0.add(new ModelRendererTurbo(axle0, 58, 17, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 16, 1, 1, 1, new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, 0.5))
