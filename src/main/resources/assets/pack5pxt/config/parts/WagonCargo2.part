@@ -4,7 +4,6 @@
     "Name": "5PXT Wagon Fluid Cargo",
     "Model": "null",
     "Category": "cargo",
-    "Textures": [],
     "Installation":{
     	"Compatible": [
     		"pack5pxt:wagon3"
