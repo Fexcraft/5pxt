@@ -1,0 +1,21 @@
+{
+    "RegistryName": "pack5pxt:wagon_cargo_item",
+    "Addon": "fvtm:fvp",
+    "Name": "5PXT Wagon Item Cargo",
+    "Model": "null",
+    "Category": "cargo",
+    "Textures": [],
+    "Installation":{
+    	"Compatible": [
+    		"pack5pxt:wagon1",
+    		"pack5pxt:wagon2"
+    	],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:inventory",
+    	"type": "ITEM",
+    	"capacity": 6,
+    	"seats": [ "external" ]
+    }
+}

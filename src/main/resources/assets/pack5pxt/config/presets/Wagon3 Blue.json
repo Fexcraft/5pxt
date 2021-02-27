@@ -236,6 +236,10 @@
       "InstalledAs": "bogie_rear",
       "Part": "pack5pxt:bogie0",
       "SelectedTexture": 0
+    },
+    {
+      "InstalledAs": "cargo",
+      "Part": "pack5pxt:wagon_cargo_fluid"
     }
   ],
   "Preset": "Wagon3 Blue",

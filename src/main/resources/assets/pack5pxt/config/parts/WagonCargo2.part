@@ -1,0 +1,20 @@
+{
+    "RegistryName": "pack5pxt:wagon_cargo_fluid",
+    "Addon": "fvtm:fvp",
+    "Name": "5PXT Wagon Fluid Cargo",
+    "Model": "null",
+    "Category": "cargo",
+    "Textures": [],
+    "Installation":{
+    	"Compatible": [
+    		"pack5pxt:wagon3"
+    	],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:inventory",
+    	"type": "FLUID",
+    	"capacity": 96000,
+    	"seats": [ "external" ]
+    }
+}
