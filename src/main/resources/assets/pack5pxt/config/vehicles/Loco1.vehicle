@@ -7,9 +7,7 @@
         "pack5pxt:textures/locomotives/loco1.png"
     ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 125.40 },
-    	{ "id":"constructor_length", "type": "float", "value": 2 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 },
+    	{ "id": "weight", "type": "float", "value": 125.40 },
     	{ "id": "gauge", "type": "integer", "value": 5 }
     ],
     "WheelPositions":[
