@@ -1,7 +1,7 @@
 //FMT-Marker FVTM-1.3
 package net.fexcraft.mod.addon.pack5pxt.models.gauges;
 
-import net.fexcraft.lib.common.math.Vec3f;
+import net.fexcraft.lib.common.Static;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.entity.JunctionSwitchEntity;
@@ -22,21 +22,7 @@ public class StandardRail extends RailGaugeModel {
 		//
 		this.ties_distance = 0.25f;
 		this.buffer_length = 0.4f;
-		this.rails = new Vec3f[][]{
-			{ new Vec3f(-0.1875, 0.09375, 0), new Vec3f(-0.15625, 0.09375, 0) },
-			{ new Vec3f(0.15625, 0.09375, 0), new Vec3f(0.1875, 0.09375, 0) },
-			//
-			//{ new Vec3f(-0.1875, 0.125, 0), new Vec3f(-0.1875, 0.0625, 0) },
-			{ new Vec3f(-0.1875, 0.0625, 0), new Vec3f(-0.1875, 0.09375, 0) },
-			{ new Vec3f(-0.15625, 0.09375, 0), new Vec3f(-0.15625, 0.0625, 0) },
-			//
-			//{ new Vec3f(0.15625, 0.125, 0), new Vec3f(0.15625, 0.0625, 0) },
-			{ new Vec3f(0.15625, 0.0625, 0), new Vec3f(0.15625, 0.09375, 0) },
-			{ new Vec3f(0.1875, 0.09375, 0), new Vec3f(0.1875, 0.0625, 0) },
-			//
-			{ new Vec3f(-0.1875, 0.0625, 0), new Vec3f(-0.15625, 0.0625, 0) },
-			{ new Vec3f(0.15625, 0.0625, 0), new Vec3f(0.1875, 0.0625, 0) }
-		};
+		this.addRailRect(Static.sixteenth, 2.5f, 1.5f, 0.5f, 0.5f, true);
 		TurboList ties = new TurboList("ties");
 		ties.add(new ModelRendererTurbo(ties, 0, 0, textureX, textureY)
 			.addShapeBox(-0.5f, 0, -5, 1, 1, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
