@@ -5,9 +5,12 @@ import net.fexcraft.lib.common.Static;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.entity.JunctionSwitchEntity;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.RailGaugeModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.sys.rail.EntryDirection;
 import net.fexcraft.mod.fvtm.sys.rail.Junction;
+import net.fexcraft.mod.fvtm.sys.rail.signals.SignalType;
 
 /** This file was exported via the FVTM Exporter V1.3 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
@@ -15,6 +18,10 @@ import net.fexcraft.mod.fvtm.sys.rail.Junction;
  */
 @fModel(registryname = "5pxt:models/gauges/standard")
 public class StandardRail extends RailGaugeModel {
+	
+	public TurboList double_base, double_lever0, double_lever1;
+	public TurboList simple_signal_base, simple_signal_stop, simple_signal_clear;
+	public TurboList fork2_lever, fork2_base, fork3_lever, fork3_base;
 
 	public StandardRail(){
 		super(); textureX = 64; textureY = 32;
@@ -85,12 +92,14 @@ public class StandardRail extends RailGaugeModel {
 		simple_signal_clear.add(new ModelRendererTurbo(simple_signal_clear, 32, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-0.5f, -7.25f, -0.75f).setRotationAngle(0, 0, 0)
 		);
+		simple_signal_clear.addProgram(DefaultPrograms.ALWAYS_GLOW);
 		this.groups.add(simple_signal_clear);
 		//
 		simple_signal_stop = new TurboList("simple_signal_stop");
 		simple_signal_stop.add(new ModelRendererTurbo(simple_signal_stop, 27, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-0.5f, -8.75f, -0.75f).setRotationAngle(0, 0, 0)
 		);
+		simple_signal_stop.addProgram(DefaultPrograms.ALWAYS_GLOW);
 		this.groups.add(simple_signal_stop);
 		//
 		TurboList buffer = new TurboList("buffer");
@@ -121,32 +130,36 @@ public class StandardRail extends RailGaugeModel {
 		);
 		this.groups.add(buffer);
 	}
-	
+
 	@Override
-	public void renderSwitch(JunctionSwitchEntity entity, Junction junction){
-		switch(junction.type){
-			case DOUBLE:{
-				double_base.renderPlain();
-				double_lever0.get(0).rotationAngleX = junction.switch0 ? -80 : 80;
-				double_lever0.renderPlain();
-				double_lever1.get(0).rotationAngleX = junction.switch1 ? -80 : 80;
-				double_lever1.renderPlain();
-				break;
-			}
-			case FORK_2:{
-				fork2_base.renderPlain();
-				fork2_lever.get(0).rotationAngleX = junction.switch0 ? -80 : 80;
-				fork2_lever.renderPlain();
-				break;
-			}
-			case FORK_3:{
-				fork3_base.renderPlain();
-				fork3_lever.get(0).rotationAngleX = junction.switch0 ? -120 : junction.switch1 ? 120 : 0;
-				fork3_lever.renderPlain();
-				break;
-			}
-			case CROSSING: case STRAIGHT: default: return;
-		}
+	public void renderDoubleSwitch(JunctionSwitchEntity entity, Junction junction){
+		double_base.renderPlain();
+		double_lever0.get(0).rotationAngleX = junction.switch0 ? -80 : 80;
+		double_lever0.renderPlain();
+		double_lever1.get(0).rotationAngleX = junction.switch1 ? -80 : 80;
+		double_lever1.renderPlain();
+	}
+
+	@Override
+	public void renderFork2Switch(JunctionSwitchEntity entity, Junction junction){
+		fork2_base.renderPlain();
+		fork2_lever.get(0).rotationAngleX = junction.switch0 ? -80 : 80;
+		fork2_lever.renderPlain();
+	}
+
+	@Override
+	public void renderFork3Switch(JunctionSwitchEntity entity, Junction junction){
+		fork3_base.renderPlain();
+		fork3_lever.get(0).rotationAngleX = junction.switch0 ? -120 : junction.switch1 ? 120 : 0;
+		fork3_lever.renderPlain();
+	}
+
+	@Override
+	public void renderSignal(Junction junction, EntryDirection dir, boolean state){
+		if(junction.signal == null || junction.signal.type != SignalType.Kind.BLOCK) return;
+		simple_signal_base.renderPlain();
+		if(!state) simple_signal_stop.renderBlock(null, null, null);
+		if(state) simple_signal_clear.renderBlock(null, null, null);
 	}
 
 }
