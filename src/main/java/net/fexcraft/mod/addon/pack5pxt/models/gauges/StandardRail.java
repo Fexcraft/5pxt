@@ -4,7 +4,6 @@ package net.fexcraft.mod.addon.pack5pxt.models.gauges;
 import net.fexcraft.lib.common.Static;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.entity.JunctionSwitchEntity;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.RailGaugeModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
@@ -29,6 +28,7 @@ public class StandardRail extends RailGaugeModel {
 		//
 		this.ties_distance = 0.25f;
 		this.buffer_length = 0.4f;
+		this.signal_offset = 0.45f;
 		this.addRailRect(Static.sixteenth, 2.5f, 1.5f, 0.5f, 0.5f, true);
 		TurboList ties = new TurboList("ties");
 		ties.add(new ModelRendererTurbo(ties, 0, 0, textureX, textureY)
@@ -131,7 +131,7 @@ public class StandardRail extends RailGaugeModel {
 		this.groups.add(buffer);
 	}
 
-	@Override
+	/*@Override
 	public void renderDoubleSwitch(JunctionSwitchEntity entity, Junction junction){
 		double_base.renderPlain();
 		double_lever0.get(0).rotationAngleX = junction.switch0 ? -80 : 80;
@@ -152,7 +152,7 @@ public class StandardRail extends RailGaugeModel {
 		fork3_base.renderPlain();
 		fork3_lever.get(0).rotationAngleX = junction.switch0 ? -120 : junction.switch1 ? 120 : 0;
 		fork3_lever.renderPlain();
-	}
+	}*/
 
 	@Override
 	public void renderSignal(Junction junction, EntryDirection dir, boolean state){
