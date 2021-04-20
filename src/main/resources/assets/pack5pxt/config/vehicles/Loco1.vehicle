@@ -8,7 +8,9 @@
     ],
     "Attributes": [
     	{ "id": "weight", "type": "float", "value": 125.40 },
-    	{ "id": "gauge", "type": "integer", "value": 5 }
+    	{ "id": "gauge", "type": "integer", "value": 5 },
+    	{ "id": "hitbox_width", "type": "float", "value": 0.75 },
+    	{ "id": "hitbox_height", "type": "float", "value": 0.75 }
     ],
     "WheelPositions":[
         { "x":  8, "y": -2, "z": 0, "id": "bogie_front" },

@@ -10,7 +10,9 @@
     	{ "id": "weight", "type": "float", "value": 101.20 },
     	{ "id": "w2_dl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id": "w2_dr", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
-    	{ "id": "gauge", "type": "integer", "value": 5 }
+    	{ "id": "gauge", "type": "integer", "value": 5 },
+    	{ "id": "hitbox_width", "type": "float", "value": 0.75 },
+    	{ "id": "hitbox_height", "type": "float", "value": 0.75 }
     ],
     "WheelPositions":[
         { "x":  12, "y": -2, "z": 0, "id": "bogie_front" },
