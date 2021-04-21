@@ -22,7 +22,7 @@
 		"engine": "gep:engine_diesel",
         "bogie_front": "pack5pxt:bogie0",
         "bogie_rear": "pack5pxt:bogie0",
-        "seat": "pack5pxt:loco_seat"
+        "seats": "pack5pxt:loco1_seats"
 	},
 	"VehicleType": "RAIL",
 	"CouplerRange": 0.05
