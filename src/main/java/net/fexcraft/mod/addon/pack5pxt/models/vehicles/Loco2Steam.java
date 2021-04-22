@@ -299,7 +299,7 @@ public class Loco2Steam extends VehicleModel {
 		lights_front_forward.add(new ModelRendererTurbo(lights_front_forward, 0, 0, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 9, 0.25f, 0.25f, 3, new net.fexcraft.lib.common.math.Vec3f(-0.875, 0.0, 0.0))
 			.setRotationPoint(15.5f, -5.5f, 0).setRotationAngle(0, 0, 0)
 		);
-		lights_front_forward.addProgram(DefaultPrograms.LIGHTS_FRONT_FORWARD);
+		lights_front_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_front_forward);
 		//
 		TurboList lights_front_backward = new TurboList("lights_front_backward");
@@ -307,7 +307,7 @@ public class Loco2Steam extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, -0.75f, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, -0.75f, -0.375f, -0.125f, 0, -0.375f, -0.125f, 0, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f)
 			.setRotationPoint(15.375f, -4, 1.5f).setRotationAngle(0, 0, 0)
 		);
-		lights_front_backward.addProgram(DefaultPrograms.LIGHTS_FRONT_BACKWARD);
+		lights_front_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_front_backward);
 		//
 		TurboList lights_rear_forward = new TurboList("lights_rear_forward");
@@ -315,7 +315,7 @@ public class Loco2Steam extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, 0, -0.375f, -0.125f)
 			.setRotationPoint(-15.625f, -4, -3.5f).setRotationAngle(0, 0, 0)
 		);
-		lights_rear_forward.addProgram(DefaultPrograms.LIGHTS_REAR_FORWARD);
+		lights_rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_rear_forward);
 		//
 		TurboList lights_rear_backward = new TurboList("lights_rear_backward");
@@ -323,7 +323,7 @@ public class Loco2Steam extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, 0, -0.375f, -0.125f)
 			.setRotationPoint(-15.625f, -4, 2.5f).setRotationAngle(0, 0, 0)
 		);
-		lights_rear_backward.addProgram(DefaultPrograms.LIGHTS_REAR_BACKWARD);
+		lights_rear_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_rear_backward);
 		//
 	}
