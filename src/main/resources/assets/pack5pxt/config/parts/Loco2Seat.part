@@ -1,16 +1,15 @@
 {
-    "RegistryName": "pack5pxt:loco1_seats",
+    "RegistryName": "pack5pxt:loco2_seat",
     "Addon": "fvtm:pack5pxt",
     "Model": "null",
-    "Name": "Loco1 Seats/Cabins",
-    "Category": "seats",
+    "Name": "Loco2 Seat/Cabin",
+    "Category": "seat",
     "Textures": [ "minecraft:textures/blocks/stone.png" ],
     "Installation":{ "Handler": "default", "Removable": false },
     "Function":{
     	"id": "fvtm:seats",
     	"seats":[
-    		{ "driver": true, "x": -12, "y": 4, "z": 0, "name": "driver", "min_yaw": -180, "max_yaw": 180, "scale": 0.15 },
-    		{ "driver": true, "x": 12, "y": 4, "z": 0, "name": "driver", "min_yaw": -180, "max_yaw": 180, "scale": 0.15 }
+    		{ "driver": true, "x": -12, "y": 4, "z": 0, "name": "driver", "min_yaw": -180, "max_yaw": 180, "scale": 0.15, "sitting": false }
     	]
     }
 }
