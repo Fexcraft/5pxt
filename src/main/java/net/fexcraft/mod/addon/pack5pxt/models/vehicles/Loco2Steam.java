@@ -315,7 +315,7 @@ public class Loco2Steam extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, 0, -0.375f, -0.125f)
 			.setRotationPoint(-15.625f, -4, -3.5f).setRotationAngle(0, 0, 0)
 		);
-		lights_rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
+		lights_rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_rear_forward);
 		//
 		TurboList lights_rear_backward = new TurboList("lights_rear_backward");
@@ -323,7 +323,7 @@ public class Loco2Steam extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, -0.75f, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, -0.75f, -0.375f, -0.125f, 0, -0.375f, -0.125f)
 			.setRotationPoint(-15.625f, -4, 2.5f).setRotationAngle(0, 0, 0)
 		);
-		lights_rear_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
+		lights_rear_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_rear_backward);
 		//
 	}
