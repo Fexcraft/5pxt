@@ -17,6 +17,8 @@ public class Wagon5Livestock extends VehicleModel {
 	public Wagon5Livestock(){
 		super(); textureX = 128; textureY = 64;
 		this.addToCreators("Ferdinand (FEX___96)");
+		item_scale.setAll(.75f);
+		item_translate.setAll(0, -.25f, 0);
 		//
 		TurboList chassis = new TurboList("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 79, 10, textureX, textureY)

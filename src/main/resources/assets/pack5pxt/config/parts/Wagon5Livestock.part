@@ -1,0 +1,128 @@
+{
+    "RegistryName": "pack5pxt:wagon5_livestock",
+    "Addon": "fvtm:pack5pxt",
+    "Model": "null",
+    "Name": "Wagon5 Livestock (pos/loc)",
+    "Category": "cargo",
+    "Textures": [ "minecraft:textures/blocks/stone.png" ],
+    "Installation":{
+    	"Handler": "default",
+    	"Removable": false,
+    	"Compatible": [ "pack5pxt:wagon5" ]
+    },
+    "Function":{
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{
+		      "x": -15.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat0",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": -12.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat1",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": -9.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat2",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": -6.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat3",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": -3.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat4",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 3.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat5",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 6.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat6",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 9.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat7",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 12.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat8",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 0.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat9",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    },
+		    {
+		      "x": 15.0,
+		      "y": 3.1,
+		      "z": -0.0,
+		      "name": "seat10",
+		      "scale": 0.15,
+		      "min_yaw": -180,
+		      "max_yaw": 180,
+		      "filter": ["!players", "animals"]
+		    }
+    	]
+    }
+}
