@@ -166,6 +166,7 @@ public class Wagon5Livestock extends VehicleModel {
 		doors_left.add(new ModelRendererTurbo(doors_left, 13, 50, textureX, textureY).addBox(0, 0, 0, 5, 5, 0.75f)
 			.setRotationPoint(-5, -8, 2.625f).setRotationAngle(0, 0, 0)
 		);
+		doors_left.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(doors_left);
 		//
 		TurboList doors_right = new TurboList("doors_right");
@@ -175,6 +176,7 @@ public class Wagon5Livestock extends VehicleModel {
 		doors_right.add(new ModelRendererTurbo(doors_right, 78, 49, textureX, textureY).addBox(0, 0, 0, 5, 5, 0.75f)
 			.setRotationPoint(-5, -8, -3.375f).setRotationAngle(0, 0, 0)
 		);
+		doors_right.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(doors_right);
 		//
 		TurboList lights_front_rear = new TurboList("lights_front_rear");
@@ -226,53 +228,53 @@ public class Wagon5Livestock extends VehicleModel {
 		primary.add(new ModelRendererTurbo(primary, 81, 37, textureX, textureY).addBox(0, 0, 0, 12, 3, 1)
 			.setRotationPoint(-17.5f, -6, 2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 54, 37, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -6.375f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 54, 37, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -6.375f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 27, 36, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -6.375f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 27, 36, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -6.375f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 0, 35, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -6.375f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 0, 35, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -6.375f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 80, 34, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -6.375f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 80, 34, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -6.375f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 53, 34, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -6.875f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 53, 34, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -6.875f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 27, 32, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -6.875f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 27, 32, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -6.875f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 0, 32, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -6.875f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 0, 32, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -6.875f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 99, 31, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -6.875f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 99, 31, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -6.875f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 72, 31, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -7.375f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 72, 31, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -7.375f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 100, 28, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -7.375f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 100, 28, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -7.375f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 73, 28, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -7.375f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 73, 28, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -7.375f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 76, 25, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -7.375f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 76, 25, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -7.375f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 77, 22, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -7.875f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 77, 22, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -7.875f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 77, 19, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(5.5f, -7.875f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 77, 19, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(5.5f, -7.875f, 3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 78, 16, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -7.875f, -3.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 78, 16, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -7.875f, -3).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 79, 13, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 1)
-			.setRotationPoint(-17.5f, -7.875f, 2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 79, 13, textureX, textureY).addBox(0, 0, 0, 12, 0.25f, 0.25f)
+			.setRotationPoint(-17.5f, -7.875f, 3).setRotationAngle(0, 0, 0)
 		);
 		primary.add(new ModelRendererTurbo(primary, 31, 51, textureX, textureY).addBox(0, 0, 0, 1, 5, 1)
 			.setRotationPoint(4.5f, -8, -3.5f).setRotationAngle(0, 0, 0)
@@ -301,29 +303,29 @@ public class Wagon5Livestock extends VehicleModel {
 		primary.add(new ModelRendererTurbo(primary, 39, 44, textureX, textureY).addBox(0, 0, 0, 1, 3, 5)
 			.setRotationPoint(17.5f, -6, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 26, 44, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(-18.5f, -7.875f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 26, 44, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(-18.25f, -7.875f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 111, 43, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(-18.5f, -7.375f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 111, 43, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(-18.25f, -7.375f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 13, 43, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(-18.5f, -6.875f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 13, 43, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(-18.25f, -6.875f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 0, 43, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(-18.5f, -6.375f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 0, 43, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(-18.25f, -6.375f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 89, 42, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(17.5f, -7.875f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 89, 42, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(17.875f, -7.875f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 76, 42, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(17.5f, -7.375f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 76, 42, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(17.875f, -7.375f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 103, 41, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(17.5f, -6.875f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 103, 41, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(17.875f, -6.875f, -2.5f).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 114, 21, textureX, textureY).addBox(0, 0, 0, 1, 0.25f, 5)
-			.setRotationPoint(17.5f, -6.375f, -2.5f).setRotationAngle(0, 0, 0)
+		primary.add(new ModelRendererTurbo(primary, 114, 21, textureX, textureY).addBox(0, 0, 0, 0.25f, 0.25f, 5)
+			.setRotationPoint(17.875f, -6.375f, -2.5f).setRotationAngle(0, 0, 0)
 		);
 		primary.add(new ModelRendererTurbo(primary, 122, 19, textureX, textureY).addBox(0, 0, 0, 1, 5, 1)
 			.setRotationPoint(4.5f, -8, 2.5f).setRotationAngle(0, 0, 0)
