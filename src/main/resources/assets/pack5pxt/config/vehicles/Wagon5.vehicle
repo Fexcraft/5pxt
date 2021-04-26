@@ -1,0 +1,31 @@
+{
+    "RegistryName": "pack5pxt:wagon5",
+    "Addon": "fvtm:pack5pxt",
+    "Name": "(Wagon 5) Livestock",
+    "Model": "5pxt:models/vehicle/wagon5",
+    "Textures": [
+        "pack5pxt:textures/wagons/wagon5.png"
+    ],
+    "Attributes": [
+    	{ "id": "weight", "type": "float", "value": 89.0 },
+    	{ "id": "w5_dl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id": "w5_dr", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id": "gauge", "type": "integer", "value": 5 },
+    	{ "id": "hitbox_width", "type": "float", "value": 0.75 },
+    	{ "id": "hitbox_height", "type": "float", "value": 0.75 }
+    ],
+    "WheelPositions":[
+        { "x":  12, "y": -2, "z": 0, "id": "bogie_front" },
+        { "x": -12, "y": -2, "z": 0, "id": "bogie_rear" }
+    ],
+    "RearConnector": [ -19, -2.5, 0 ],
+    "FrontConnector": [ 19, -2.5, 0 ],
+    "PreInstalled":{
+        "bogie_front": "pack5pxt:bogie0",
+        "bogie_rear": "pack5pxt:bogie0",
+        "cargo": "pack5pxt:wagon5_livestock"
+	},
+	"VehicleType": "RAIL",
+	"CouplerRange": 0.05,
+	"Wagon": true
+}
