@@ -1,6 +1,6 @@
 {
     "RegistryName": "pack5pxt:wagon_cargo_item",
-    "Addon": "fvtm:fvp",
+    "Addon": "fvtm:pack5pxt",
     "Name": "5PXT Wagon Item Cargo",
     "Model": "null",
     "Category": "cargo",
