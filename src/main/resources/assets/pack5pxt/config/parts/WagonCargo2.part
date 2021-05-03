@@ -1,6 +1,6 @@
 {
     "RegistryName": "pack5pxt:wagon_cargo_fluid",
-    "Addon": "fvtm:fvp",
+    "Addon": "fvtm:pack5pxt",
     "Name": "5PXT Wagon Fluid Cargo",
     "Model": "null",
     "Category": "cargo",
