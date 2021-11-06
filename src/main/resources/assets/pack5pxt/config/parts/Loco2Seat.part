@@ -1,15 +1,41 @@
 {
-    "RegistryName": "pack5pxt:loco2_seat",
-    "Addon": "fvtm:pack5pxt",
-    "Model": "null",
-    "Name": "Loco2 Seat/Cabin",
-    "Category": "seat",
-    "Textures": [ "minecraft:textures/blocks/stone.png" ],
-    "Installation":{ "Handler": "default", "Removable": false },
-    "Function":{
-    	"id": "fvtm:seats",
-    	"seats":[
-    		{ "driver": true, "x": -12, "y": 4, "z": 0, "name": "driver", "min_yaw": -180, "max_yaw": 180, "scale": 0.15, "sitting": false }
-    	]
-    }
+	"RegistryName": "pack5pxt:loco2_seat",
+	"Addon": "fvtm:pack5pxt",
+	"Model": "null",
+	"Name": "Loco2 Seat/Cabin",
+	"Category": "seat",
+	"Textures": [
+		"minecraft:textures/blocks/stone.png"
+	],
+	"Installation": {
+		"Handler": "default",
+		"Removable": false
+	},
+	"Functions": [
+		{
+			"id": "fvtm:seats",
+			"seats": [
+				{
+					"driver": true,
+					"x": -12,
+					"y": 4,
+					"z": 0,
+					"name": "driver",
+					"min_yaw": -180,
+					"max_yaw": 180,
+					"scale": 0.15,
+					"sitting": false
+				}
+			]
+		},
+		{
+			"id": "fvtm:particle_emitter",
+			"particle": "pack5pxt:smoke",
+			"frequency": 10,
+			"pos": [ 11.5, -12, 0 ],
+			"direction": [ 0, 0.5, 0 ],
+			"speed": 0.01,
+			"condition": "pack5pxt:engine_on"
+		}
+	]
 }
