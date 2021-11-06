@@ -6,7 +6,6 @@ import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
-import net.minecraft.util.EnumParticleTypes;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.1.0 &copy; 2020 - Fexcraft.net<br>
@@ -274,7 +273,6 @@ public class Loco2Steam extends VehicleModel {
 		chimneys.add(new ModelRendererTurbo(chimneys, 34, 0, textureX, textureY).addHollowCylinder(0, 0, 0, 1, 0.75f, 1, 8, 0, 1, 1, 4, null)
 			.setRotationPoint(11.5f, -11.5f, 0).setRotationAngle(0, 0, 0)
 		);
-		chimneys.addProgram(new DefaultPrograms.ParticleEmitter(EnumParticleTypes.SMOKE_NORMAL, true, 11.5f, 11.5f, 0, 0, 0, 0));
 		this.groups.add(chimneys);
 		//
 		TurboList boiler = new TurboList("boiler");
