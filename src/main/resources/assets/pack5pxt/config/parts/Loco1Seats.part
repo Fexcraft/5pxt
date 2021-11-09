@@ -16,12 +16,16 @@
 	    },
 		{
 			"id": "fvtm:particle_emitter",
-			"particle": "pack5pxt:smoke",
-			"frequency": 10,
-			"pos": [ -8, -10.5, -1.5 ],
-			"direction": [ 0, 1, 0 ],
-			"speed0": 0.01,
-			"condition": "pack5pxt:engine_on"
+			"emitters":[
+				{
+					"particle": "pack5pxt:smoke",
+					"frequency": 10,
+					"pos": [ -8, -10.5, -1.5 ],
+					"direction": [ 0, 1, 0 ],
+					"speed0": 0.01,
+					"condition": "pack5pxt:engine_on"
+				}
+			]
 		}
 	]
 }
