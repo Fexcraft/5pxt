@@ -4,9 +4,10 @@ package net.fexcraft.mod.addon.pack5pxt.models.gauges;
 import net.fexcraft.lib.common.Static;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.data.block.BlockData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.RailGaugeModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.sys.rail.EntryDirection;
 import net.fexcraft.mod.fvtm.sys.rail.Junction;
 import net.fexcraft.mod.fvtm.sys.rail.signals.SignalType;
@@ -18,9 +19,9 @@ import net.fexcraft.mod.fvtm.sys.rail.signals.SignalType;
 @fModel(registryname = "5pxt:models/gauges/standard")
 public class StandardRail extends RailGaugeModel {
 	
-	public TurboList double_base, double_lever0, double_lever1;
-	public TurboList simple_signal_base, simple_signal_stop, simple_signal_clear;
-	public TurboList fork2_lever, fork2_base, fork3_lever, fork3_base;
+	public ModelGroup double_base, double_lever0, double_lever1;
+	public ModelGroup simple_signal_base, simple_signal_stop, simple_signal_clear;
+	public ModelGroup fork2_lever, fork2_base, fork3_lever, fork3_base;
 
 	public StandardRail(){
 		super(); textureX = 64; textureY = 32;
@@ -30,56 +31,56 @@ public class StandardRail extends RailGaugeModel {
 		this.buffer_length = 0.4f;
 		this.signal_offset = 0.45f;
 		this.addRailRect(Static.sixteenth, 2.5f, 1.5f, 0.5f, 0.5f, true);
-		TurboList ties = new TurboList("ties");
+		ModelGroup ties = new ModelGroup("ties");
 		ties.add(new ModelRendererTurbo(ties, 0, 0, textureX, textureY)
 			.addShapeBox(-0.5f, 0, -5, 1, 1, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
 			.setRotationPoint(0, -1, 0).setRotationAngle(0, 0, 0).setName("ties_uni_piece")
 		);
 		this.groups.add(ties);
 		//
-		double_base = new TurboList("double_base");
+		double_base = new ModelGroup("double_base");
 		double_base.add(new ModelRendererTurbo(double_base, 13, 0, textureX, textureY).addBox(0, 0, 0, 6, 1, 4)
 			.setRotationPoint(-3, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_base);
 		//
-		double_lever0 = new TurboList("double_lever0");
+		double_lever0 = new ModelGroup("double_lever0");
 		double_lever0.add(new ModelRendererTurbo(double_lever0, 20, 6, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(-2.5f, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_lever0);
 		//
-		double_lever1 = new TurboList("double_lever1");
+		double_lever1 = new ModelGroup("double_lever1");
 		double_lever1.add(new ModelRendererTurbo(double_lever1, 45, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(0.5f, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(double_lever1);
 		//
-		fork2_base = new TurboList("fork2_base");
+		fork2_base = new ModelGroup("fork2_base");
 		fork2_base.add(new ModelRendererTurbo(fork2_base, 49, 0, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
 			.setRotationPoint(-1.5f, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork2_base);
 		//
-		fork2_lever = new TurboList("fork2_lever");
+		fork2_lever = new ModelGroup("fork2_lever");
 		fork2_lever.add(new ModelRendererTurbo(fork2_lever, 30, 0, textureX, textureY).addBox(0, -1.5f, -0.5f, 2, 2, 1)
 			.setRotationPoint(-1, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork2_lever);
 		//
-		fork3_base = new TurboList("fork3_base");
+		fork3_base = new ModelGroup("fork3_base");
 		fork3_base.add(new ModelRendererTurbo(fork3_base, 34, 0, textureX, textureY).addBox(0, 0, 0, 3, 1, 4)
 			.setRotationPoint(-1.5f, -1, -2).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork3_base);
 		//
-		fork3_lever = new TurboList("fork3_lever");
+		fork3_lever = new ModelGroup("fork3_lever");
 		fork3_lever.add(new ModelRendererTurbo(fork3_lever, 0, 0, textureX, textureY).addCylinder(0, 0, 0, 3, 2, 3, 0.5f, 0.5f, 3, null)
 			.setRotationPoint(-1, -1, 0).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(fork3_lever);
 		//
-		simple_signal_base = new TurboList("simple_signal_base");
+		simple_signal_base = new ModelGroup("simple_signal_base");
 		simple_signal_base.add(new ModelRendererTurbo(simple_signal_base, 37, 6, textureX, textureY).addBox(0, 0, 0, 1, 8, 1)
 			.setRotationPoint(-0.5f, -8, -0.5f).setRotationAngle(0, 0, 0)
 		);
@@ -88,21 +89,21 @@ public class StandardRail extends RailGaugeModel {
 		);
 		this.groups.add(simple_signal_base);
 		//
-		simple_signal_clear = new TurboList("simple_signal_clear");
+		simple_signal_clear = new ModelGroup("simple_signal_clear");
 		simple_signal_clear.add(new ModelRendererTurbo(simple_signal_clear, 32, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-0.5f, -7.25f, -0.75f).setRotationAngle(0, 0, 0)
 		);
 		simple_signal_clear.addProgram(DefaultPrograms.ALWAYS_GLOW);
 		this.groups.add(simple_signal_clear);
 		//
-		simple_signal_stop = new TurboList("simple_signal_stop");
+		simple_signal_stop = new ModelGroup("simple_signal_stop");
 		simple_signal_stop.add(new ModelRendererTurbo(simple_signal_stop, 27, 6, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-0.5f, -8.75f, -0.75f).setRotationAngle(0, 0, 0)
 		);
 		simple_signal_stop.addProgram(DefaultPrograms.ALWAYS_GLOW);
 		this.groups.add(simple_signal_stop);
 		//
-		TurboList buffer = new TurboList("buffer");
+		ModelGroup buffer = new ModelGroup("buffer");
 		buffer.add(new ModelRendererTurbo(buffer, 32, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(1.5f, -4.25f, 0).setRotationAngle(0, 0, 0)
 		);
@@ -157,9 +158,9 @@ public class StandardRail extends RailGaugeModel {
 	@Override
 	public void renderSignal(Junction junction, EntryDirection dir, boolean state){
 		if(junction.signal == null || junction.signal.type != SignalType.Kind.BLOCK) return;
-		simple_signal_base.renderPlain();
-		if(!state) simple_signal_stop.renderBlock(null, null, null);
-		if(state) simple_signal_clear.renderBlock(null, null, null);
+		simple_signal_base.render();
+		if(!state) simple_signal_stop.render(RENDERDATA.set((BlockData)null, null, null));
+		if(state) simple_signal_clear.render(RENDERDATA.set((BlockData)null, null, null));
 	}
 
 }

@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.part;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
 /** This file was exported via the FVTM Exporter V1.3 of<br>
@@ -16,7 +16,7 @@ public class DirectionalUpgrade extends PartModel {
 	public DirectionalUpgrade(){
 		super(); textureX = 256; textureY = 256;
 		//
-		TurboList group0 = new TurboList("group0");
+		ModelGroup group0 = new ModelGroup("group0");
 		group0.add(new ModelRendererTurbo(group0, 0, 0, textureX, textureY).addBox(0, 0, -1, 24, 2, 2)
 			.setRotationPoint(-12, -8, 0).setRotationAngle(0, 0, 0).setTextured(false)
 		);

@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.part;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -18,7 +18,7 @@ public class Bogie0Model extends PartModel {
 		super(); textureX = 32; textureY = 32;
 		this.addToCreators("Ferdinand");
 		//
-		TurboList axle0 = new TurboList("axle0");
+		ModelGroup axle0 = new ModelGroup("axle0");
 		axle0.add(new ModelRendererTurbo(axle0, 22, 8, textureX, textureY).addCylinder(0, 0, 0, 1, 0.5f, 16, 1, 1, 1, null)
 			.setRotationPoint(-2.5f, 1, 2.5f).setRotationAngle(0, 0, 0)
 		);
@@ -38,7 +38,7 @@ public class Bogie0Model extends PartModel {
 		axle0.addProgram(DefaultPrograms.BOGIE_AUTO);
 		this.groups.add(axle0);
 		//
-		TurboList axle1 = new TurboList("axle1");
+		ModelGroup axle1 = new ModelGroup("axle1");
 		axle1.add(new ModelRendererTurbo(axle1, 0, 6, textureX, textureY).addCylinder(0, 0, 0, 1, 0.5f, 16, 1, 1, 1, null)
 			.setRotationPoint(2.5f, 1, 2.5f).setRotationAngle(0, 0, 0)
 		);
@@ -58,7 +58,7 @@ public class Bogie0Model extends PartModel {
 		axle1.addProgram(DefaultPrograms.BOGIE_AUTO);
 		this.groups.add(axle1);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 0, 0, textureX, textureY)
 			.addShapeBox(0, 0, 0, 8, 1, 4, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-4, 0, -2).setRotationAngle(0, 0, 0)

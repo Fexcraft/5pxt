@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.vehicles;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
@@ -20,7 +20,7 @@ public class CabinWagon1 extends VehicleModel {
 		item_scale.setAll(.75f);
 		item_translate.setAll(0, -.25f, 0);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 71, 10, textureX, textureY)
 			.addShapeBox(0, 0, 0, 15, 1.5f, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-7.5f, -2.25f, -3.5f).setRotationAngle(0, 0, 0)
@@ -211,7 +211,7 @@ public class CabinWagon1 extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList lights_front_head = new TurboList("lights_front_head");
+		ModelGroup lights_front_head = new ModelGroup("lights_front_head");
 		lights_front_head.add(new ModelRendererTurbo(lights_front_head, 101, 55, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0)
 			.setRotationPoint(17.625f, -4.5f, -3).setRotationAngle(0, 0, 0)
@@ -223,7 +223,7 @@ public class CabinWagon1 extends VehicleModel {
 		lights_front_head.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_front_head);
 		//
-		TurboList lights_front_rear = new TurboList("lights_front_rear");
+		ModelGroup lights_front_rear = new ModelGroup("lights_front_rear");
 		lights_front_rear.add(new ModelRendererTurbo(lights_front_rear, 42, 55, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(17.625f, -4.5f, -2).setRotationAngle(0, 0, 0)
@@ -235,7 +235,7 @@ public class CabinWagon1 extends VehicleModel {
 		lights_front_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_front_rear);
 		//
-		TurboList lights_rear_rear = new TurboList("lights_rear_rear");
+		ModelGroup lights_rear_rear = new ModelGroup("lights_rear_rear");
 		lights_rear_rear.add(new ModelRendererTurbo(lights_rear_rear, 120, 54, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-18.625f, -2.75f, -3.25f).setRotationAngle(0, 0, 0)
@@ -247,7 +247,7 @@ public class CabinWagon1 extends VehicleModel {
 		lights_rear_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_rear_rear);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 100, 21, textureX, textureY).addBox(0, 0, 0, 10, 1, 1)
 			.setRotationPoint(6.5f, -9, -3.5f).setRotationAngle(0, 0, 0)
 		);
@@ -385,7 +385,7 @@ public class CabinWagon1 extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList secondary = new TurboList("secondary");
+		ModelGroup secondary = new ModelGroup("secondary");
 		secondary.add(new ModelRendererTurbo(secondary, 0, 0, textureX, textureY)
 			.addShapeBox(0, 0, 0, 36, 1, 7, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-18.5f, -3.25f, -3.5f).setRotationAngle(0, 0, 0)
@@ -436,19 +436,19 @@ public class CabinWagon1 extends VehicleModel {
 		secondary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(secondary);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 63, 47, textureX, textureY).addBox(0, 0, 0, 2, 5, 1)
 			.setRotationPoint(-16.5f, -8, -3.375f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(door_right);
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 56, 47, textureX, textureY).addBox(0, 0, 0, 2, 5, 1)
 			.setRotationPoint(-16.5f, -8, 2.375f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(door_left);
 		//
-		TurboList seats_interior = new TurboList("seats_interior");
+		ModelGroup seats_interior = new ModelGroup("seats_interior");
 		seats_interior.add(new ModelRendererTurbo(seats_interior, 34, 40, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.25f, 0, -0.5f, -0.25f)
 			.setRotationPoint(2, -4, -2.5f).setRotationAngle(0, 0, 0)
@@ -655,7 +655,7 @@ public class CabinWagon1 extends VehicleModel {
 		);
 		this.groups.add(seats_interior);
 		//
-		TurboList markers = new TurboList("markers");
+		ModelGroup markers = new ModelGroup("markers");
 		markers.add(new ModelRendererTurbo(markers, -1, -1, textureX, textureY)/* An exporter for the polygon type MARKER was not made yet. */
 			.setRotationPoint(0, -4, -1.6f).setRotationAngle(0, 0, 0)
 		);

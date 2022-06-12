@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.vehicles;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -20,7 +20,7 @@ public class Wagon1Flatbed extends VehicleModel {
 		item_scale.setAll(.75f);
 		item_translate.setAll(0, -.25f, 0);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 73, 12, textureX, textureY)
 			.addShapeBox(0, 0, 0, 15, 1.5f, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, -0.5f, -0.5f, -0.75f, -0.5f, -0.5f, -0.75f, -0.5f, 0, -0.75f, -0.5f, 0)
 			.setRotationPoint(-7.5f, -2.25f, -3.5f).setRotationAngle(0, 0, 0)
@@ -153,7 +153,7 @@ public class Wagon1Flatbed extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList lights_front_rear = new TurboList("lights_front_rear");
+		ModelGroup lights_front_rear = new ModelGroup("lights_front_rear");
 		lights_front_rear.add(new ModelRendererTurbo(lights_front_rear, 73, 9, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(17.625f, -2.75f, -3.25f).setRotationAngle(0, 0, 0)
@@ -165,7 +165,7 @@ public class Wagon1Flatbed extends VehicleModel {
 		lights_front_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_front_rear);
 		//
-		TurboList lights_rear_rear = new TurboList("lights_rear_rear");
+		ModelGroup lights_rear_rear = new ModelGroup("lights_rear_rear");
 		lights_rear_rear.add(new ModelRendererTurbo(lights_rear_rear, 0, 4, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-18.625f, -2.75f, -3.25f).setRotationAngle(0, 0, 0)
@@ -177,7 +177,7 @@ public class Wagon1Flatbed extends VehicleModel {
 		lights_rear_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_rear_rear);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 80, 16, textureX, textureY).addBox(0, 0, 0, 1, 1, 7)
 			.setRotationPoint(-18.5f, -4, -3.5f).setRotationAngle(0, 0, 0)
 		);

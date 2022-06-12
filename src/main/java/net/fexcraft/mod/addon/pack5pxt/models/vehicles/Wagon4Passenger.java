@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.pack5pxt.models.vehicles;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -20,7 +20,7 @@ public class Wagon4Passenger extends VehicleModel {
 		item_scale.setAll(.75f);
 		item_translate.setAll(0, -.25f, 0);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 79, 12, textureX, textureY)
 			.addShapeBox(0, 0, 0, 15, 1.5f, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.75f, -0.5f, -0.5f, -0.75f, -0.5f, -0.5f, -0.75f, -0.5f, 0, -0.75f, -0.5f, 0)
 			.setRotationPoint(-7.5f, -2.25f, -3.5f).setRotationAngle(0, 0, 0)
@@ -155,7 +155,7 @@ public class Wagon4Passenger extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList doors_left = new TurboList("doors_left");
+		ModelGroup doors_left = new ModelGroup("doors_left");
 		doors_left.add(new ModelRendererTurbo(doors_left, 87, 39, textureX, textureY).addBox(0, 0, 0, 2, 5, 1)
 			.setRotationPoint(14.5f, -8, 2.375f).setRotationAngle(0, 0, 0)
 		);
@@ -164,7 +164,7 @@ public class Wagon4Passenger extends VehicleModel {
 		);
 		this.groups.add(doors_left);
 		//
-		TurboList doors_right = new TurboList("doors_right");
+		ModelGroup doors_right = new ModelGroup("doors_right");
 		doors_right.add(new ModelRendererTurbo(doors_right, 73, 39, textureX, textureY).addBox(0, 0, 0, 2, 5, 1)
 			.setRotationPoint(14.5f, -8, -3.375f).setRotationAngle(0, 0, 0)
 		);
@@ -173,7 +173,7 @@ public class Wagon4Passenger extends VehicleModel {
 		);
 		this.groups.add(doors_right);
 		//
-		TurboList lights_front_rear = new TurboList("lights_front_rear");
+		ModelGroup lights_front_rear = new ModelGroup("lights_front_rear");
 		lights_front_rear.add(new ModelRendererTurbo(lights_front_rear, 79, 50, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(17.625f, -2.75f, -3.25f).setRotationAngle(0, 0, 0)
@@ -185,7 +185,7 @@ public class Wagon4Passenger extends VehicleModel {
 		lights_front_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(lights_front_rear);
 		//
-		TurboList lights_rear_rear = new TurboList("lights_rear_rear");
+		ModelGroup lights_rear_rear = new ModelGroup("lights_rear_rear");
 		lights_rear_rear.add(new ModelRendererTurbo(lights_rear_rear, 114, 40, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-18.625f, -2.75f, -3.25f).setRotationAngle(0, 0, 0)
@@ -197,7 +197,7 @@ public class Wagon4Passenger extends VehicleModel {
 		lights_rear_rear.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(lights_rear_rear);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 0, 23, textureX, textureY)
 			.addShapeBox(0, 0, 0, 37, 1, 1, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-18.5f, -10, 2.5f).setRotationAngle(0, 0, 0)
@@ -224,7 +224,7 @@ public class Wagon4Passenger extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList inner_walls = new TurboList("inner_walls");
+		ModelGroup inner_walls = new ModelGroup("inner_walls");
 		inner_walls.add(new ModelRendererTurbo(inner_walls, 23, 39, textureX, textureY).addBox(0, 0, 0, 2, 6, 0)
 			.setRotationPoint(-14, -9, 1).setRotationAngle(0, -90, 0)
 		);
@@ -245,7 +245,7 @@ public class Wagon4Passenger extends VehicleModel {
 		);
 		this.groups.add(inner_walls);
 		//
-		TurboList inner_seats = new TurboList("inner_seats");
+		ModelGroup inner_seats = new ModelGroup("inner_seats");
 		inner_seats.add(new ModelRendererTurbo(inner_seats, 59, 38, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -0.25f, 0, -0.5f, -0.25f)
 			.setRotationPoint(2, -4, -2.5f).setRotationAngle(0, 0, 0)
@@ -464,7 +464,7 @@ public class Wagon4Passenger extends VehicleModel {
 		);
 		this.groups.add(inner_seats);
 		//
-		TurboList secondary = new TurboList("secondary");
+		ModelGroup secondary = new ModelGroup("secondary");
 		secondary.add(new ModelRendererTurbo(secondary, 0, 26, textureX, textureY).addBox(0, 0, 0, 14, 2, 1)
 			.setRotationPoint(0.5f, -5, -3.5f).setRotationAngle(0, 0, 0)
 		);
