@@ -3,6 +3,15 @@
     "Addon": "fvtm:pack5pxt",
     "Name": "(Loco 1) Diesel",
     "Model": "pack5pxt:models/vehicle/loco1.fmf",
+    "ModelData":{
+		"Programs":[
+			"primary fvtm:rgb_primary",
+			"lights_front_head fvtm:lights_rail_forward",
+			"lights_rear_rear fvtm:lights_rail_forward",
+			"lights_front_rear fvtm:lights_rail_backward",
+			"lights_rear_head fvtm:lights_rail_backward"
+		]
+	},
     "Textures": [
         "pack5pxt:textures/locomotives/loco1.png"
     ],
