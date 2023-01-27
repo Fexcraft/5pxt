@@ -11,6 +11,7 @@ import net.fexcraft.mod.fvtm.model.RailGaugeModel;
 import net.fexcraft.mod.fvtm.sys.rail.EntryDirection;
 import net.fexcraft.mod.fvtm.sys.rail.Junction;
 import net.fexcraft.mod.fvtm.sys.rail.signals.SignalType;
+import net.minecraft.tileentity.TileEntity;
 
 /** This file was exported via the FVTM Exporter V1.3 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
@@ -159,8 +160,8 @@ public class StandardRail extends RailGaugeModel {
 	public void renderSignal(Junction junction, EntryDirection dir, boolean state){
 		if(junction.signal == null || junction.signal.type != SignalType.Kind.BLOCK) return;
 		simple_signal_base.render();
-		if(!state) simple_signal_stop.render(RENDERDATA.set((BlockData)null, null, null));
-		if(state) simple_signal_clear.render(RENDERDATA.set((BlockData)null, null, null));
+		if(!state) simple_signal_stop.render(RENDERDATA.clear());
+		if(state) simple_signal_clear.render(RENDERDATA.clear());
 	}
 
 }
