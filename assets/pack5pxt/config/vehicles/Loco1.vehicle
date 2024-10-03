@@ -1,0 +1,58 @@
+{ 
+    "Addon": "pack5pxt", 
+    "Name": "(Loco 1) Diesel", 
+    "Model": "pack5pxt:models/vehicle/loco1.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary", 
+            "lights_front_head fvtm:lights_rail_forward", 
+            "lights_rear_rear fvtm:lights_rail_forward", 
+            "lights_front_rear fvtm:lights_rail_backward", 
+            "lights_rear_head fvtm:lights_rail_backward"
+        ]
+    }, 
+    "Textures": [ 
+        "pack5pxt:textures/locomotives/loco1.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 125.4
+        }, 
+        "gauge": { 
+            "type": "integer", 
+            "value": 5
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 0.75
+        }
+    }, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.125, -0.5 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.125, 0.5 ]
+        }
+    }, 
+    "RearConnector": [ -15, -2.5, 0 ], 
+    "FrontConnector": [ 15, -2.5, 0 ], 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "ID": "loco1", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:engine_diesel", 
+        "vehicle:bogie_front": "pack5pxt:bogie0", 
+        "vehicle:bogie_rear": "pack5pxt:bogie0", 
+        "vehicle:seats": "pack5pxt:loco1_seats"
+    }
+}

@@ -1,0 +1,49 @@
+{ 
+    "Addon": "pack5pxt", 
+    "Name": "(Wagon 3) Tanker", 
+    "Model": "5pxt:models/vehicle/wagon3", 
+    "Textures": [ 
+        "pack5pxt:textures/wagons/wagon3.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 120.5
+        }, 
+        "gauge": { 
+            "type": "integer", 
+            "value": 5
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 0.75
+        }
+    }, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.125, -0.5625 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.125, 0.5625 ]
+        }
+    }, 
+    "RearConnector": [ -15, -2.5, 0 ], 
+    "FrontConnector": [ 15, -2.5, 0 ], 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "Wagon": true, 
+    "ID": "wagon3", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:bogie_front": "pack5pxt:bogie0", 
+        "vehicle:bogie_rear": "pack5pxt:bogie0", 
+        "vehicle:cargo": "pack5pxt:wagon_cargo_fluid"
+    }
+}

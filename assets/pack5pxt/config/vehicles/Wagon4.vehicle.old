@@ -1,0 +1,55 @@
+{ 
+    "RegistryName": "pack5pxt:wagon4", 
+    "Addon": "fvtm:pack5pxt", 
+    "Name": "(Wagon 4) Passenger", 
+    "Model": "5pxt:models/vehicle/wagon4", 
+    "Textures": [ 
+        "pack5pxt:textures/wagons/wagon4.png"
+    ], 
+    "Attributes": [ 
+        { 
+            "id": "weight", 
+            "type": "float", 
+            "value": 230.5
+        }, 
+        { 
+            "id": "gauge", 
+            "type": "integer", 
+            "value": 5
+        }, 
+        { 
+            "id": "hitbox_width", 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        { 
+            "id": "hitbox_height", 
+            "type": "float", 
+            "value": 0.75
+        }
+    ], 
+    "WheelPositions": [ 
+        { 
+            "x": 12, 
+            "y": -2, 
+            "z": 0, 
+            "id": "bogie_front"
+        }, 
+        { 
+            "x": -12, 
+            "y": -2, 
+            "z": 0, 
+            "id": "bogie_rear"
+        }
+    ], 
+    "RearConnector": [ -19, -2.5, 0 ], 
+    "FrontConnector": [ 19, -2.5, 0 ], 
+    "PreInstalled": { 
+        "bogie_front": "pack5pxt:bogie0", 
+        "bogie_rear": "pack5pxt:bogie0", 
+        "seats": "pack5pxt:wagon4_seats"
+    }, 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "Wagon": true
+}

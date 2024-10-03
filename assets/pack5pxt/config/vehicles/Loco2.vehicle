@@ -1,0 +1,49 @@
+{ 
+    "Addon": "pack5pxt", 
+    "Name": "(Loco 2) Steam", 
+    "Model": "5pxt:models/vehicle/loco2", 
+    "Textures": [ 
+        "pack5pxt:textures/locomotives/loco2.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 205.3
+        }, 
+        "gauge": { 
+            "type": "integer", 
+            "value": 5
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 0.75
+        }
+    }, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.125, -0.65625 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.125, 0.65625 ]
+        }
+    }, 
+    "RearConnector": [ -17, -2.5, 0 ], 
+    "FrontConnector": [ 17, -2.5, 0 ], 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "ID": "loco2", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "pack5pxt:steam_engine", 
+        "vehicle:bogie_front": "pack5pxt:bogie0", 
+        "vehicle:bogie_rear": "pack5pxt:bogienull", 
+        "vehicle:seat": "pack5pxt:loco2_seat"
+    }
+}

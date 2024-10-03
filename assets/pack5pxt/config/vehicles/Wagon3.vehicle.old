@@ -1,0 +1,55 @@
+{ 
+    "RegistryName": "pack5pxt:wagon3", 
+    "Addon": "fvtm:pack5pxt", 
+    "Name": "(Wagon 3) Tanker", 
+    "Model": "5pxt:models/vehicle/wagon3", 
+    "Textures": [ 
+        "pack5pxt:textures/wagons/wagon3.png"
+    ], 
+    "Attributes": [ 
+        { 
+            "id": "weight", 
+            "type": "float", 
+            "value": 120.5
+        }, 
+        { 
+            "id": "gauge", 
+            "type": "integer", 
+            "value": 5
+        }, 
+        { 
+            "id": "hitbox_width", 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        { 
+            "id": "hitbox_height", 
+            "type": "float", 
+            "value": 0.75
+        }
+    ], 
+    "WheelPositions": [ 
+        { 
+            "x": 9, 
+            "y": -2, 
+            "z": 0, 
+            "id": "bogie_front"
+        }, 
+        { 
+            "x": -9, 
+            "y": -2, 
+            "z": 0, 
+            "id": "bogie_rear"
+        }
+    ], 
+    "RearConnector": [ -15, -2.5, 0 ], 
+    "FrontConnector": [ 15, -2.5, 0 ], 
+    "PreInstalled": { 
+        "bogie_front": "pack5pxt:bogie0", 
+        "bogie_rear": "pack5pxt:bogie0", 
+        "cargo": "pack5pxt:wagon_cargo_fluid"
+    }, 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "Wagon": true
+}

@@ -1,0 +1,48 @@
+{ 
+    "Addon": "pack5pxt", 
+    "Name": "(Wagon 1) Flatbed", 
+    "Model": "5pxt:models/vehicle/wagon1", 
+    "Textures": [ 
+        "pack5pxt:textures/wagons/wagon1.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 80.9
+        }, 
+        "gauge": { 
+            "type": "integer", 
+            "value": 5
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 0.75
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 0.75
+        }
+    }, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.125, -0.75 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.125, 0.75 ]
+        }
+    }, 
+    "RearConnector": [ -19, -2.5, 0 ], 
+    "FrontConnector": [ 19, -2.5, 0 ], 
+    "VehicleType": "RAIL", 
+    "CouplerRange": 0.05, 
+    "Wagon": true, 
+    "ID": "wagon1", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:bogie_front": "pack5pxt:bogie0", 
+        "vehicle:bogie_rear": "pack5pxt:bogie0"
+    }
+}
