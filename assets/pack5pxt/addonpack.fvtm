@@ -1,19 +1,15 @@
 {
-	"RegistryName": "fvtm:pack5pxt",
+	"ID": "pack5pxt",
 	"Name": "5PX Gauge Trains Pack",
-	"URL": "http://fexcraft.net/download?modid=addon-5pxt",
-	"UpdateID": "addon-5xpt",
+	"URL": "http://fexcraft.net/",
 	"License": "http://fexcraft.net/license?id=mods",
 	"Dependencies": [
-		"fvtm:gep"
+		"gep"
 	],
 	"Authors": [
 		"01e4af9b-2a30-471e-addf-f6338ffce04b"
 	],
-	"Version": "1.4.1",
-	"GenerateItemJson": false,
-	"GenerateItemIcon": false,
-	"GenerateLang": false,
+	"Version": "2.0.0",
 	"Particles": {
 		"smoke": {
 			"type": "cuboid",
