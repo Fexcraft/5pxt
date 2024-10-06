@@ -1,7 +1,12 @@
 {
     "ID": "standard_tieless",
     "Addon": "pack5pxt",
-    "Model": "pack5pxt:models/gauge/standard_tieless.obj",
+    "Model": "pack5pxt:models/gauge/standard_tieless.blank",
+    "ModelData":{
+        "Rail":[
+            "rect 0.0625 2.5 1.5 0.5 0.5 true"
+        ]
+    },
     "Name": "Standard Tie-less Gauge (5pxt)",
     "Description": "Perfect for road or other crossings!",
     "Width": 0.3125,
