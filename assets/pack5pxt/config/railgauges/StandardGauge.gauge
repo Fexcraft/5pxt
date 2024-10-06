@@ -2,6 +2,11 @@
     "ID": "standard",
     "Addon": "pack5pxt",
     "Model": "5pxt:models/gauges/standard",
+    "ModelData":{
+        "Rail":[
+            "rect 0.0625 2.5 1.5 0.5 0.5 true"
+        ]
+    },
     "Name": "Standard Gauge (5pxt)",
     "Width": 0.3125,
     "Height": 0.09375,
