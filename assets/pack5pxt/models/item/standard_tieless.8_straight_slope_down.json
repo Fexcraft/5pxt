@@ -1,6 +1,6 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "pack5pxt:items/standard_tieless_rail.8_straight_slope"
+{ 
+    "parent": "item/generated", 
+    "textures": { 
+        "layer0": "pack5pxt:item/standard_tieless_rail.8_straight_slope"
     }
 }

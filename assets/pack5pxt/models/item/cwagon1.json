@@ -1,6 +1,6 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "pack5pxt:items/cwagon1"
-  }
+{ 
+    "parent": "item/generated", 
+    "textures": { 
+        "layer0": "pack5pxt:item/cwagon1"
+    }
 }
