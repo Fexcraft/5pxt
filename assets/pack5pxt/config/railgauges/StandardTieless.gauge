@@ -5,7 +5,16 @@
     "ModelData":{
         "Rail":[
             "rect 0.0625 2.5 1.5 0.5 0.5 true"
-        ]
+        ],
+        "Rails":{
+            "def": {
+                "scale": 0.0625,
+                "pos": [ 2.5, 1.5 ],
+                "size": [ 0.5, 0.5 ],
+                "mirror": true,
+                "v": [ 0, 0.0625, 0.0625 ]
+            }
+        }
     },
     "Name": "Standard Tie-less Gauge (5pxt)",
     "Description": "Perfect for road or other crossings!",
@@ -16,6 +25,7 @@
     "Compatible": [],
     "TiesTexture": "minecraft:textures/blocks/anvil_base.png",
     "ModelTexture": "pack5pxt:textures/rails/standard_switch.png",
+    "RailTexture": "pack5pxt:textures/rails/test.png",
     "PreSets":[
     	{
     		"name": "4_straight",
