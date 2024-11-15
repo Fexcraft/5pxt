@@ -40,8 +40,10 @@
             "pos": [ -0.0, 0.125, 0.5 ]
         }
     }, 
-    "RearConnector": [ -15, -2.5, 0 ], 
-    "FrontConnector": [ 15, -2.5, 0 ], 
+    "Connectors":{
+        "rear": [ 0, 0.15625, 0.9375],
+        "front": [ 0, 0.15625, -0.9375]
+    },
     "VehicleType": "RAIL", 
     "CouplerRange": 0.05, 
     "ID": "loco1", 
