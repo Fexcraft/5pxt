@@ -1,7 +1,7 @@
 { 
     "Addon": "pack5pxt", 
     "Name": "(Loco 2) Steam", 
-    "Model": "5pxt:models/vehicle/loco2", 
+    "Model": "pack5pxt:models/vehicle/loco2.fmf", 
     "Textures": [ 
         "pack5pxt:textures/locomotives/loco2.png"
     ], 
@@ -30,9 +30,11 @@
         "bogie_rear": { 
             "pos": [ -0.0, 0.125, 0.65625 ]
         }
-    }, 
-    "RearConnector": [ -17, -2.5, 0 ], 
-    "FrontConnector": [ 17, -2.5, 0 ], 
+    },
+    "Connectors":{
+        "rear": [ 0, 0.15625, 1.0625],
+        "front": [ 0, 0.15625, -1.0625]
+    },
     "VehicleType": "RAIL", 
     "CouplerRange": 0.05, 
     "ID": "loco2", 
