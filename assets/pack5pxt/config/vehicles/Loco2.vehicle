@@ -11,8 +11,8 @@
             "value": 205.3
         }, 
         "gauge": { 
-            "type": "integer", 
-            "value": 5
+            "type": "float", 
+            "value": 0.3125
         }, 
         "hitbox_width": { 
             "type": "float", 
@@ -44,8 +44,8 @@
     }, 
     "InstalledParts": { 
         "vehicle:engine": "pack5pxt:steam_engine", 
-        "vehicle:bogie_front": "pack5pxt:bogie0", 
-        "vehicle:bogie_rear": "pack5pxt:bogienull", 
+        "bogie_front": "pack5pxt:bogie0", 
+        "bogie_rear": "pack5pxt:bogienull", 
         "vehicle:seat": "pack5pxt:loco2_seat"
     }
 }
