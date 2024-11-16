@@ -1,12 +1,15 @@
 {
-    "RegistryName": "pack5pxt:bogie0",
-    "Addon": "fvtm:pack5pxt",
-    "Model": "5pxt:models/part/bogie0",
+    "ID": "bogie0",
+    "Addon": "pack5pxt",
+    "Model": "pack5pxt:models/part/bogie0.fmf",
     "Name": "Bogie Type 0",
     "Category": "bogie",
     "Texture": "pack5pxt:textures/parts/bogie0.png",
     "Installation":{
-    	"Handler": "bogie", "Height": 2
+        "Handler": "bogie",
+        "Height": 0.125
     },
-    "Function": "fvtm:bogie"
+    "Functions":{
+        "fvtm:bogie":{}
+    }
 }
