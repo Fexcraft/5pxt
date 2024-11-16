@@ -1,12 +1,18 @@
 {
-    "RegistryName": "pack5pxt:bogienull",
-    "Addon": "fvtm:pack5pxt",
+    "ID": "bogienull",
+    "Addon": "pack5pxt",
     "Model": "null",
     "Name": "Bogie Type Null",
+    "Description":[
+        "Logical bogie without model."
+    ]
     "Category": "bogie",
     "Texture": "pack5pxt:textures/parts/bogie0.png",
     "Installation":{
-    	"Handler": "bogie", "Height": 2
+        "Handler": "bogie",
+        "Height": 0.125
     },
-    "Function": "fvtm:bogie"
+    "Functions":{
+        "fvtm:bogie":{}
+    }
 }
