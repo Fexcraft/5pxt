@@ -42,10 +42,20 @@
         "primary": "#ffffff", 
         "secondary": "#ffffff"
     }, 
+    "PartSlots": { 
+        "engine": {}
+    }, 
     "InstalledParts": { 
-        "vehicle:engine": "pack5pxt:steam_engine", 
+        "vehicle:engine": "gep:engine_diesel", 
         "bogie_front": "pack5pxt:bogie0", 
-        "bogie_rear": "pack5pxt:bogienull", 
-        "vehicle:seat": "pack5pxt:loco2_seat"
+        "bogie_rear": "pack5pxt:bogienull"
+    }, 
+    "DefaultSeats": { 
+        "driver": { 
+            "pos": [ 0, 0.125, 0.75 ], 
+            "driver": true,
+            "sitting": false,
+            "scale": 0.15
+        }
     }
 }
