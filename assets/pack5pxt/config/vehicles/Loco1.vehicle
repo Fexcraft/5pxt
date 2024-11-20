@@ -1,4 +1,5 @@
 { 
+    "ID": "loco1", 
     "Addon": "pack5pxt", 
     "Name": "(Loco 1) Diesel", 
     "Model": "pack5pxt:models/vehicle/loco1.fmf", 
@@ -9,7 +10,12 @@
             "lights_rear_rear fvtm:lights_rail_forward", 
             "lights_front_rear fvtm:lights_rail_backward", 
             "lights_rear_head fvtm:lights_rail_backward"
-        ]
+        ],
+        "ItemScale": 0.75
+    }, 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
     }, 
     "Textures": [ 
         "pack5pxt:textures/locomotives/loco1.png"
@@ -46,15 +52,26 @@
     },
     "VehicleType": "RAIL", 
     "CouplerRange": 0.05, 
-    "ID": "loco1", 
-    "ColorChannels": { 
-        "primary": "#ffffff", 
-        "secondary": "#ffffff"
+    "PartSlots": { 
+        "engine": {}
     }, 
     "InstalledParts": { 
         "vehicle:engine": "gep:engine_diesel", 
         "bogie_front": "pack5pxt:bogie0", 
-        "bogie_rear": "pack5pxt:bogie0", 
-        "vehicle:seats": "pack5pxt:loco1_seats"
+        "bogie_rear": "pack5pxt:bogie0",
+    }
+    "DefaultSeats": { 
+        "driver_front": { 
+            "pos": [ 0, 0.125, -0.6875 ], 
+            "driver": true,
+            "sitting": false,
+            "scale": 0.15
+        },
+        "driver_rear": { 
+            "pos": [ 0, 0.125, 0.6875 ], 
+            "driver": true,
+            "sitting": false,
+            "scale": 0.15
+        }
     }
 }
