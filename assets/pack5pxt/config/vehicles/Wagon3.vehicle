@@ -1,7 +1,20 @@
 { 
+    "ID": "wagon3", 
     "Addon": "pack5pxt", 
     "Name": "(Wagon 3) Tanker", 
-    "Model": "5pxt:models/vehicle/wagon3", 
+    "Model": "pack5pxt:models/vehicle/wagon3.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary", 
+            "lights_rear_rear fvtm:lights_rail_forward", 
+            "lights_front_rear fvtm:lights_rail_backward",
+        ],
+        "ItemScale": 0.75
+    }, 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
     "Textures": [ 
         "pack5pxt:textures/wagons/wagon3.png"
     ], 
@@ -11,8 +24,8 @@
             "value": 120.5
         }, 
         "gauge": { 
-            "type": "integer", 
-            "value": 5
+            "type": "float", 
+            "value": 0.3125
         }, 
         "hitbox_width": { 
             "type": "float", 
@@ -31,19 +44,16 @@
             "pos": [ -0.0, 0.125, 0.5625 ]
         }
     }, 
-    "RearConnector": [ -15, -2.5, 0 ], 
-    "FrontConnector": [ 15, -2.5, 0 ], 
+    "Connectors":{
+        "rear": [ 0, 0.15625, 0.9375 ],
+        "front": [ 0, 0.15625, -0.9375 ]
+    }, 
     "VehicleType": "RAIL", 
     "CouplerRange": 0.05, 
     "Wagon": true, 
-    "ID": "wagon3", 
-    "ColorChannels": { 
-        "primary": "#ffffff", 
-        "secondary": "#ffffff"
-    }, 
     "InstalledParts": { 
-        "vehicle:bogie_front": "pack5pxt:bogie0", 
-        "vehicle:bogie_rear": "pack5pxt:bogie0", 
+        "bogie_front": "pack5pxt:bogie0", 
+        "bogie_rear": "pack5pxt:bogie0", 
         "vehicle:cargo": "pack5pxt:wagon_cargo_fluid"
     }
 }
