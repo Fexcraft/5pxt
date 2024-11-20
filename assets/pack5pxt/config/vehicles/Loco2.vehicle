@@ -1,7 +1,22 @@
 { 
+    "ID": "loco2", 
     "Addon": "pack5pxt", 
     "Name": "(Loco 2) Steam", 
     "Model": "pack5pxt:models/vehicle/loco2.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "boiler fvtm:rgb_primary", 
+            "lights_front_forward fvtm:lights_rail_forward", 
+            "lights_rear_backward fvtm:lights_rail_forward", 
+            "lights_front_backward fvtm:lights_rail_backward", 
+            "lights_rear_forward fvtm:lights_rail_backward"
+        ],
+        "ItemScale": 0.75
+    }, 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
     "Textures": [ 
         "pack5pxt:textures/locomotives/loco2.png"
     ], 
@@ -37,11 +52,6 @@
     },
     "VehicleType": "RAIL", 
     "CouplerRange": 0.05, 
-    "ID": "loco2", 
-    "ColorChannels": { 
-        "primary": "#ffffff", 
-        "secondary": "#ffffff"
-    }, 
     "PartSlots": { 
         "engine": {}
     }, 
