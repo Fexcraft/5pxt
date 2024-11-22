@@ -37,6 +37,13 @@
             "type": "float", 
             "value": 0.75
         }
+        "lights": { 
+            "type": "boolean", 
+            "access": [
+                "driver_front",
+                "driver_rear"
+            ]
+        }
     }, 
     "WheelPositions": { 
         "bogie_front": { 
