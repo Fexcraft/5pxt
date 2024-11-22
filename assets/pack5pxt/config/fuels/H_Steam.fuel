@@ -1,9 +1,0 @@
-{
-    "RegistryName": "pack5pxt:steamandcoal_high",
-    "Addon": "fvtm:pack5pxt",
-    "Name": "High Pack5pxt S+C",
-    "Description": "(Higher Pressure) Steam and Coal mixture for Pack5pxt Steam Trains.",
-    "PrimaryGroup": "steam-and-coal",
-    "SecondaryGroup": "high_pressure",
-    "Quality": 1.5
-}

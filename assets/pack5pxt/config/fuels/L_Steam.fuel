@@ -1,9 +1,0 @@
-{
-    "RegistryName": "pack5pxt:steamandcoal_low",
-    "Addon": "fvtm:pack5pxt",
-    "Name": "Low Pack5pxt S+C",
-    "Description": "(Lower Pressure) Steam and Coal mixture for Pack5pxt Steam Trains.",
-    "PrimaryGroup": "steam-and-coal",
-    "SecondaryGroup": "low_pressure",
-    "Quality": 0.75
-}
