@@ -1,11 +1,8 @@
 //Other
-itemGroup.fvtm:pack5pxt=Pack 5PXT
+itemGroup.pack5pxt=Pack 5PXT
 
 //Parts
 item.pack5pxt:bogie0.name=Bogie [0]
-item.pack5pxt:loco1_seats.name=Locomotive [1] Seats
-item.pack5pxt:loco2_seat.name=Locomotive [2] Seat
-item.pack5pxt:sac_normal.name=Steam & Coal Mixture
 item.pack5pxt:bogienull.name=Bogie [NULL]
 item.pack5pxt:dirupgrade.name= DIR-Update for Wagon[1]
 item.pack5pxt:steam_engine.name=Steam (and Coal) Engine
@@ -14,7 +11,7 @@ item.pack5pxt:cwagon1_seats.name=C/Wagon [1] Seats
 
 //Locomotives
 item.pack5pxt:loco1.name=Locomotive [1] Diesel
-item.pack5pxt:loco2.name=Locomotive [2] Steam
+item.pack5pxt:loco2.name=Locomotive [2] Steam*
 
 //Wagons
 item.pack5pxt:wagon1.name=Wagon [1] Flatbed
@@ -36,6 +33,3 @@ item.pack5pxt:standard_tieless.8_straight_slope_up.name=5PXT 8m Straight Slope U
 item.pack5pxt:standard_tieless.8_straight_slope_down.name=5PXT 8m Straight Slope DOWN
 item.pack5pxt:standard_tieless.2_curve_90_right.name=5PXT 2m 90deg Curve Right
 item.pack5pxt:standard_tieless.2_curve_90_left.name=5PXT 2m 90deg Curve Left
-item.pack5pxt:steamandcoal_high.name=Steam And Coal [HIGH]
-item.pack5pxt:steamandcoal_low.name=Steam And Coal [LOW]
-item.pack5pxt:steamandcoal.name=Steam And Coal
