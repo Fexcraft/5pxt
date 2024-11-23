@@ -25,3 +25,4 @@ localrepos
 eclipse
 old/
 run/
+*.jar
