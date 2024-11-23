@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+issueTrackerURL="https://enter.your.url/here"
+[[mods]]
+modId="fvtm"
+version="1.0.0"
+displayName="Pack 5PXT"
+displayURL="https://fexcraft.net/wiki/mod/fvtm"
+credits="Generated using FMT" #optional
+authors="FEX___96"
+displayTest="IGNORE_ALL_VERSION"
+
+description='''A pack for FVTM'''
