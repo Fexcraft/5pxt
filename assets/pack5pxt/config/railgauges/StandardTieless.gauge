@@ -3,13 +3,15 @@
     "Addon": "pack5pxt",
     "Model": "pack5pxt:models/gauge/standard_tieless.blank",
     "ModelData":{
+		"TextureWidth": 16,
+		"TextureHeight": 16,
         "Rails":{
             "def": {
                 "scale": 0.0625,
                 "pos": [ 2.5, 1.5 ],
                 "size": [ 0.5, 0.5 ],
                 "mirror": true,
-                "v": [ 0, 0.0625, 0.0625 ]
+                "v": [ 0, 1, 1 ]
             }
         }
     },
