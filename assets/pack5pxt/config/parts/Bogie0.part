@@ -2,6 +2,13 @@
     "ID": "bogie0",
     "Addon": "pack5pxt",
     "Model": "pack5pxt:models/part/bogie0.fmf",
+    "ModelData":{
+        "Programs":[
+            "chassis fvtm:bogie_auto",
+            "axle0 fvtm:bogie_auto",
+            "axle1 fvtm:bogie_auto"
+        ]
+    },
     "Name": "Bogie Type 0",
     "Category": "bogie",
     "Texture": "pack5pxt:textures/parts/bogie0.png",
