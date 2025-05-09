@@ -2,34 +2,35 @@
 itemGroup.pack5pxt=Pack 5PXT
 
 //Parts
-item.pack5pxt:bogie0.name=Bogie [0]
-item.pack5pxt:bogienull.name=Bogie [NULL]
-item.pack5pxt:dirupgrade.name= DIR-Update for Wagon[1]
+item.pack5pxt:bogie0.name=Bogie Type 0
+item.pack5pxt:bogienull.name=Bogie Type Null
+item.pack5pxt:dirupgrade.name=Directional Upgrade
 item.pack5pxt:steam_engine.name=Steam (and Coal) Engine
-item.pack5pxt:wagon4_seats.name=Wagon [4] Seats
-item.pack5pxt:cwagon1_seats.name=C/Wagon [1] Seats
-
+item.pack5pxt:wagon4_seats.name=Wagon4 Seats
+item.pack5pxt:cwagon1_seats.name=C/Wagon1 Seats
 //Locomotives
-item.pack5pxt:loco1.name=Locomotive [1] Diesel
-item.pack5pxt:loco2.name=Locomotive [2] Steam*
-
+item.pack5pxt:loco1.name=(Loco 1) Diesel
+item.pack5pxt:loco2.name=(Loco 2) Steam
 //Wagons
-item.pack5pxt:wagon1.name=Wagon [1] Flatbed
-item.pack5pxt:wagon2.name=Wagon [2] Box
-item.pack5pxt:wagon3.name=Wagon [3] Tanker
-item.pack5pxt:wagon4.name=Wagon [4] Passenger
-item.pack5pxt:cwagon1.name=C/Wagon [1] Passenger
-
+item.pack5pxt:wagon1.name=(Wagon 1) Flatbed
+item.pack5pxt:wagon2.name=(Wagon 2) Box
+item.pack5pxt:wagon3.name=(Wagon 3) Tanker
+item.pack5pxt:wagon4.name=(Wagon 4) Passenger
+item.pack5pxt:cwagon1.name=(C/Wagon 1) Passenger
 //Items
-item.pack5pxt:standard.name=5PXT Standard Gauge
-item.pack5pxt:standard.4_straight.name=5PXT 4m Straight
-item.pack5pxt:standard.8_straight_slope_up.name=5PXT 8m Straight Slope UP
-item.pack5pxt:standard.8_straight_slope_down.name=5PXT 8m Straight Slope DOWN
-item.pack5pxt:standard.2_curve_90_right.name=5PXT 2m 90deg Curve Right
-item.pack5pxt:standard.2_curve_90_left.name=5PXT 2m 90deg Curve Left
-item.pack5pxt:standard_tieless.name=5PXT Standard Tie-less Gauge
-item.pack5pxt:standard_tieless.4_straight.name=5PXT 4m Straight
-item.pack5pxt:standard_tieless.8_straight_slope_up.name=5PXT 8m Straight Slope UP
-item.pack5pxt:standard_tieless.8_straight_slope_down.name=5PXT 8m Straight Slope DOWN
-item.pack5pxt:standard_tieless.2_curve_90_right.name=5PXT 2m 90deg Curve Right
-item.pack5pxt:standard_tieless.2_curve_90_left.name=5PXT 2m 90deg Curve Left
+item.pack5pxt:standard.name=Standard Gauge (5pxt)
+item.pack5pxt:standard:4_straight.name=5PXT 4m Straight
+item.pack5pxt:standard:8_straight_slope_up.name=5PXT 8m Straight Slope UP
+item.pack5pxt:standard:8_straight_slope_down.name=5PXT 8m Straight Slope DOWN
+item.pack5pxt:standard:2_curve_90_right.name=5PXT 2m 90deg Curve Right
+item.pack5pxt:standard:2_curve_90_left.name=5PXT 2m 90deg Curve Left
+item.pack5pxt:standard_tieless.name=Standard Tie-less Gauge (5pxt)
+item.pack5pxt:standard_tieless:4_straight.name=5PXT 4m Straight
+item.pack5pxt:standard_tieless:8_straight_slope_up.name=5PXT 8m Straight Slope UP
+item.pack5pxt:standard_tieless:8_straight_slope_down.name=5PXT 8m Straight Slope DOWN
+item.pack5pxt:standard_tieless:2_curve_90_right.name=5PXT 2m 90deg Curve Right
+item.pack5pxt:standard_tieless:2_curve_90_left.name=5PXT 2m 90deg Curve Left
+item.pack5pxt:wagon5_livestock.name=Wagon5 Livestock (pos/loc)
+item.pack5pxt:wagon_cargo_fluid.name=5PXT Wagon Fluid Cargo
+item.pack5pxt:wagon_cargo_item.name=5PXT Wagon Item Cargo
+item.pack5pxt:wagon5.name=(Wagon 5) Livestock
