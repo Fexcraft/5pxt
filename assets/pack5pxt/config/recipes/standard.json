@@ -1,0 +1,13 @@
+{
+    "Type": "fcl:crafting",
+    "Category": "recipe.fvtm.rails",
+    "Result": {
+        "id": "pack5pxt:standard",
+        "amount": 1
+    },
+    "Components":{
+        "minecraft:paper":{
+            "amount": 2,
+        }
+    }
+}
