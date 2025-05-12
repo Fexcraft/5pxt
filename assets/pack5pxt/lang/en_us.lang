@@ -1,5 +1,6 @@
 //Other
 itemGroup.pack5pxt=Pack 5PXT
+recipe.pack5xpt.trains=5pxt Trains
 
 //Parts
 item.pack5pxt:bogie0.name=Bogie Type 0

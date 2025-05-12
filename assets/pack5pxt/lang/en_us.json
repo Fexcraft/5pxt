@@ -1,5 +1,6 @@
 { 
     "itemGroup.pack5pxt": "Pack 5PXT", 
+    "recipe.pack5xpt.trains": "5pxt Trains",
     "item.pack5pxt.bogie0": "Bogie Type 0", 
     "item.pack5pxt.bogienull": "Bogie Type Null", 
     "item.pack5pxt.dirupgrade": "Directional Upgrade", 

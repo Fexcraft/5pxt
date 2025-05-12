@@ -1,0 +1,27 @@
+{
+    "Type": "fcl:crafting",
+    "Category": "recipe.pack5xpt.trains",
+    "Result": {
+        "id": "pack5pxt:loco2",
+        "amount": 1
+    },
+    "Components":{
+        "ingotIron":{
+            "type": "ore",
+            "amount": 2
+        },
+        "c:ingots/iron":{
+            "type": "tag",
+            "amount": 2
+        },
+        "gep:rubber":{
+            "amount": 2
+        },
+        "gep:electric_components":{
+            "amount": 2
+        },
+        "gep:lights_set":{
+            "amount": 1
+        }
+    }
+}
