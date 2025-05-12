@@ -25,6 +25,12 @@
     "TiesTexture": "minecraft:textures/blocks/anvil_base.png",
     "ModelTexture": "pack5pxt:textures/rails/standard_switch.png",
     "RailTexture": "pack5pxt:textures/rails/test.png",
+    "UseMaterials":{
+		"#c:ingots/iron": 0.1,
+		"#minecraft:planks": 0.1,
+		"#ingotIron": 0.1,
+		"#plankWood": 0.1
+    }
     "PreSets":[
     	{
     		"name": "4_straight",
